@@ -1,0 +1,3 @@
+här är rad 1
+här är nästa rad
+den här filen har tre rader.

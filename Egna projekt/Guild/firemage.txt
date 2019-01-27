@@ -1,0 +1,201 @@
+rune
+
+prepot
+pyroblast
+living bomb
+fireball/scorch
+fireball
+
+ha pyro+heating här
+
+crystal
+fireball+pyro
+fireball+pyro (om hero)
+pyroblast
+pyroblast
+combustion
+inferno blast
+
+burst klar
+
+dragons breath
+cold snap
+dragons breath
+blast wave
+blast wave
+
+
+non-burst:
+
+fireball tills heating up
+fireball+inferno blast
+fireball+pyroblast
+
+
+1 buff
+
+	2/4x1 = 4320 (10800)
+	3/3x1 = 1440 (7200)
+	3/2/1 = 7200
+	4/2x1 = 1800
+	4/2   = 450
+	5/1x1 = 180
+	1x6   = 6
+
+	27636
+
+2 buffs
+
+	2/2/2x1 = 16200
+	3/3 = 300
+
+	16500
+
+3 buffs
+
+	2/2/2 =1800
+
+	1800
+
+6 buffs
+
+	6x1 6!=720
+
+	720
+
+Total:
+
+	37170
+
+	46656
+
+dk5@daaa.be
+wubbelbutt01
+
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)FlipCameraYaw(math.random(360))end)
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)FlipCameraYaw(10)end)
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)CancelSummon()end)
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)CancelTrade()end)
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)InitiateTrade('target')end)
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)DeclineQuest()end)
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)ToggleTalentFrame()end)
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)ToggleTalentFrame()ToggleFriendsFrame()ToggleMinimap()ToggleFrameRate()ToggleBag(math.random(5)-1)end)
+
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)for i=1,2 do ToggleTalentFrame()ToggleFriendsFrame()ToggleSpellBook"spell"ToggleCharacter"PaperDollFrame"for k = 0,4 do ToggleBag(k)end end end)
+
+
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)for i=1,40 do CancelUnitBuff('player',i)end end)
+
+/run local m=CreateFrame"frame"m.t=0;m.m={'test1','test2','test3'}m:SetScript("OnUpdate",function(s,e)if m.t>1 then a,b,c,d=GetNumGuildMembers()n=GetGuildRosterInfo(math.random(b)) SendMail(n, m.m[math.random(3)],"");m.t=0 else m.t=m.t+e end end)
+
+
+/run local a,b,c,d=GetNumGuildMembers()local n=GetGuildRosterInfo(math.random(b))print(n)
+
+/script T,F=T or 0,F or CreateFrame("frame")if X then X=nil print("OFF.")else print("ON.") X=function()local t=GetTime()if t-T>1 then StaticPopup1Button1:Click()T=t end end end F:SetScript("OnUpdate",X)
+
+
+/run local m=CreateFrame"frame";m.t=0;m.a=true;m:SetScript("OnUpdate",function(s,e)if m.t>1 and m.a then print('accepting')AcceptTrade()m.a=false;print('accepted') else m.t=m.t+e end end)
+
+
+/run local m=CreateFrame"frame";m.t=0;m.a,m.b=true,true;m:SetScript("OnUpdate",function(s,e)if m.t>5 then AcceptTrade() elseif m.t>2 and m.b then SetTradeMoney(1)m.b=false elseif m.t>1 and m.a then InitiateTrade('target');m.a=false else m.t=m.t+e end end)
+
+
+/run local m=CreateFrame"frame"m.t=0;m.t1=true;m:SetScript("OnUpdate",function(s,e)if m.t>0.8 and m.t1 then InitiateTrade"target"m.t1=false elseif m.t>1 then CancelTrade()m.t1=true;m.t=0;else m.t=m.t+e end end)
+
+/run CreateFrame"frame":SetScript("OnUpdate",function(s,e)CancelAreaSpiritHeal()end)
+
+/run local o,e=GetAverageItemLevel();local a=GetUnitSpeed('player')print('Maximum Item Level: ' .. math.floor(o*100)/100); print('Equipped Item Level: ' .. math.floor(e*100)/100);print('Movement Speed: ' .. (math.floor((a*10000/7+0.5))/100) .. '%')
+
+/run local f=CreateFrame("DressUpModel","MyM",UIParent,"ModelTemplate")f:SetPoint("CENTER",500, 0)f:SetSize(950,900)f:SetModel("Creature\\guldan\\guldan.m2")f:SetAnimation(1)f:SetRotation(3.14)f:Show()
+
+
+
+/run local dXz=dXz or CreateFrame("frame","dXz")dXz.p=true;dXz.H=0;dXz:SetScript("OnUpdate",function(s,e) local fr=CharacterModelFrame;if fr:IsVisible() and s.p then s.p=nil;a,s.H=PlaySoundFile("Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3")elseif not fr:IsVisible() then StopSound()s.p=false end end)
+
+/run local dXz=dXz or CreateFrame("frame","dXz")dXz.t=0;dXz:SetScript("OnUpdate",function(s,e) local fr=CharacterModelFrame;fr:SetRotation(fr:GetFacing())fr:SetSequenceTime(5,s.t)s.t=s.t+100*e; end)
+/run PX = "Sound\\Music\\ZoneMusic\\DMF_L70ETC01.mp3"
+/run local dXm=dXm or CreateFrame("frame","dXm")dXm.p=true;dXm.H=0;dXm:SetScript("OnUpdate",function(s,e)local fr=CharacterModelFrame;if fr:IsVisible()and s.H==0 then a,s.H=PlaySoundFile(PX)elseif not fr:IsVisible() then StopSound(s.H)s.H=0 end end)
+
+CharacterModelFrame:SetRotation(-GetPlayerFacing()*0)
+
+CharacterModelFrame:SetSequenceTime(5,math.floor(s.t))s.t=s.t+10*e;
+
+f:SetScript("OnUpdate",function(s,e)s:SetRotation(-GetPlayerFacing());end)
+
+temerity
+destitute
+impetuous
+sallow
+jezebel
+
+
+
+/run local dXm=dXm or CreateFrame("frame","dXm")dXm.p=true;dXm.H=0;dXm:SetScript("OnUpdate",function(s,e)local fr=CharacterModelFrame;if fr:IsVisible()and s.H==0 then a,s.H=PlaySoundKitID(47598)elseif not fr:IsVisible() then StopSound(s.H)s.H=0 end end)
+
+/run dXm:SetScript("OnUpdate",function(s,e)end)
+
+Selling Archimonde HC, going every 15 minutes. Get your mount before it's removed in Legion! Accepting gold on Darksorrow/Frostmane+connected servers. Streaming on https://twitch.tv/khrubby  Whisper me for more info
+
+Selling Archimonde HC, going every 15 minutes. Get your mount before it's removed in Legion! Accepting gold on Darksorrow/Frostmane+connected servers. Whisper me for more info
+
+
+
+19:47:09 24
+19:49:59 25
+19:52:34 26
+19:58:28 27
+20:00:37 28
+20:09:02 29
+20:02:30 30
+20:13:26 31
+20:17:39 32
+20:22:23 33
+20:27:13 34
+20:31:33 35
+20:36:27 36
+20:42:24 37
+20:46:42 38
+20:50:05 39
+20:55:23 40
+21:00:45 41
+
+Leylight Shard
+Arkhana x20
+Stonehide Leather x1650
+Stormscale x800 + 2500 = 3300
+
+dawnlight x5
+maelstrom sapphire x5
+shal'dorei silk x60
+
+stormscale x150+24+115
+unbroken tooth x20
+blood of sargeras x3+2
+leystone ore x40
+felhide x2+2
+
+mossgill perch
+cursed queenfish
+
+legs: BRH, CoS (bis), arcway = 12k
+wrist: EoA, VoW = 3.5k
+shoulder: VH x2, DHT (bis), HoV, =4k
+
+incarnation
+foe
+new moon
+wrath
+
+
+new moon: 10/0.81 = 12.195
+half moon: 20/1.62 = 12.346
+full moon: 40/2.43 = 16.461
+wrath: 10/1.22 = 8.197
+
+/run if ArtifactFrame:IsVisible()then HideUIPanel(ArtifactFrame)else SocketInventoryItem(16)end
+HideUIPanel(ArtifactFrame)
+
+
+neck
+shoulders
+hands

@@ -1,0 +1,847 @@
+1 - Hellfire Assault:
+
+	Siegemaster Mar'tak:
+
+		Howling Axe: flytta bort från andra spelare.
+
+		Shockwave: stå inte i shockwave. 
+
+		Inspiring presence: ökar adds damage, döda Mar'tak snabbt (bloodlust).
+
+		Adds: 
+
+			Gorebound Dragoon: AoE:a ner
+
+			Contracted Engineer:
+
+				Boom: akta er för bomberna.
+
+				Conducted Shock Pulse: interrupta helst, stunnar annars spelare.
+
+				Repair: interrupta ASAP.
+
+			Gorebound Berserker:
+			
+				Slam: tank-swappa eller döda snabbt.
+
+			Gorebound Felcaster:
+
+				Incinerate: interrupta helst.
+
+				Felfire Volley: damage inom 50 yards.
+
+				Metamorphosis: döda ASAP när denna händer. Healing cooldown.
+
+				Siege Machines:
+
+					Felfire Flamebelcher: akta eldkloten, som Dominator Turret. 
+
+					Felfire Crusher: döda innan de når kanonen, viktigt. Melee akta er.
+
+					Felfire Artillery: ranged damage på kanonen. Döda ASAP.
+
+					Felfire Demolisher: spring ifrån den markerade positionen.
+
+					Ta ammo efter Siege Machines är döda, ungefär 12 krävs för att vinna.
+
+	Notes: 
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+2 - Iron Reaver:
+
+	Markfas och luftfas går på timer, byter vid 100 energi.
+
+	Markfas:
+
+		Immolation: stå inte i elden.
+
+		Artillery: tanks står långt bort från raiden med debuff, andra tanken tauntar.
+
+		Unstable Orb: stackar på spelare inom 8 yards, ranged sprider ut sig.
+
+		Barrage: targetar random spelare, flytta snabbt ifrån.
+
+		Pounding: raid-wide damage, healing cooldown krävs. Elden pushas bak, akta er.
+
+		Blitz: två charge i rad, flytta er. Bli verkligen inte träffade av båda.
+
+	Luftfas: 
+
+		Artillery: träffar tre random spelare, de springer ifrån raiden och använder personal defensive.
+
+		Fuel streak: flytta direkt ifrån, den tänds eld på inom kort.
+
+		Firebomb: döda inom 45 sekunder, det enda dps ska fokusera på.
+
+		Falling Slam: targetar en random spelare, 30 yard cirkel som ALLA måste ut ur, raid-wide damage.
+
+	Notes:
+
+		Venerated: lifegrippa ur Falling Slam i värsta fall. 
+
+--------------------------------------------------------------------------------------------------------------
+
+3 - Hellfire High Council:
+
+	Dia Darkwhisper:
+
+		Void Haze: gör de andra bossarna inom 25 yards immuna mot skada, separera bossarna.
+
+		Nightmare Visage: burst damage mot tanken, använd externals på tank. 
+
+		Mark of the Necromancer: spamheala targets, dispella så sent som möjligt. 
+
+		Reap: tar bort MotN, men spawnar en Shadow Pool där påverkade spelare står. Flytta till väggarna.
+
+		Wailing Horror: raid-wide damage, akta er för spöken. 
+
+	Blademaster Jubei'thos:
+
+		Fel Blade: akta er för boomerangen, riktning visas.
+
+		Felstorm: raid-wide damage, kanske healing cooldown.
+
+		Windwalk: splittar till flera images, de gör antingen Fel Blade eller Felstorm. 
+
+	Gurtogg Bloodboil:
+
+		Bloodboil: physical damage på de fem avlägsnaste spelarna, flytta in om du är väldigt låg.
+
+		Acidic Wound: reducar armor, ticking damage. 
+
+		Fel Rage: targetar random spelare i 25 sekunder, spelaren springer iväg. Personal cooldown. 
+
+		Demolishing leap: mindre skada längre ifrån.
+
+	<30%:
+
+		Gurtogg Bloodboil:
+
+			Tainted Blood: minskar max hp med 10% per stack.
+
+		Blademaster Jubei'thos:
+
+			Wicked Strike: ökande damage mot halva raiden. 
+
+		Dia Darkwhisper:
+
+			Castar MotN på halva raiden, slutar casta Reap.
+
+
+	Notes:
+
+		Hero vid Gurtogg 30%
+
+		Kill order: Gurtogg, Blademaster, Dia
+
+
+--------------------------------------------------------------------------------------------------------------
+
+4 - Kilrogg Deadeye:
+
+	Salivating Bloodthirster: döda ASAP. Kan slowas, inte stunnas. Höger/vänster först. (death grip?)
+
+	Fel Corrution: ticking damage, mind control vid 100.
+
+	Hulking terror: 
+
+		Rending Howl: mycket damage, ticking debuff. Kan interruptas, svårare och svårare.
+
+		Fel Rupture: exploderar vid kill, skadar fem närmsta spelarna + Fel Corruption.
+
+		Tank-swappa för att undvika Fel Corruption.
+
+	Kilrogg Deadeye:
+
+		Shred Armor: hög damage mot tank, stackar. Active mitigation krävs.
+
+		Heart Seeker: targetar random spelare, som springer bort, resten aktar sig. 
+
+		Blood Globule: spawnar vid Heart Seeker, döda ASAP.
+
+		Fel Blood Globule: svårare, spring långt bort, flytta bossen i värsta fall.
+
+		Death Throes: ticking damage, mindre långt bort. Undvik att stå i skit. Ökar under fighten.
+
+		Vision of Death: 
+
+			Två spelare går in, först två dps, senare en healer.
+
+			Hellblaze Imp: interrupta, annars dör du.
+
+			Hellblaze Fiend: exploderar när de dör, lämnar eld på golvet.
+
+			Hellblaze Mistress: undvik attacker, ger debuff annars.
+
+			Man åker ut vid 1HP, med en enorm damage/healing buff.
+
+			Cleansing Aura: healers kan minska Fel Corruption på nära spelare efter.
+
+	Notes:
+
+		Hero i slutet kanske, för att klara Death Throes.
+
+--------------------------------------------------------------------------------------------------------------
+
+5 - Kormrok:
+
+	Pound: 4 yard splash, alla sprider ut sig. Var 60:e seknund.
+
+	Shadow Waves: akta er för vågorna.
+
+	Explosive Runes: exploderar inom 15 sekunder, ranged soakar damage. Personal defensive.
+
+	Grasping Hands: stacka raiden, AoE för att få ner händerna snabbt.
+
+	Empowerment: 
+
+		Lila Empowerment:
+
+			Shadow Waves: från alla poolar, håll raiden långt ifrån grön pool.
+
+			Swat: knockback och mycket magic damage mot tanken, håll bossen mot en vägg. 
+
+		Röd Empowerment:
+
+			Explosive Runes respawnar framför den som soakar, soakers klumpar ihop dem, den sista despawnar.
+
+			Explosive Burst: rootar tanken, raiden måste flytta sig ifrån.
+
+		Grön Empowerment:
+
+			Grasping Hands: drar spelare till närmsta pool.
+
+			Foul Crush: tanken blir greppad, tar mycket skada. Få ut ASAP.
+
+	Enrage:
+
+		Empowerments blir permanenta i Enrage-fasen.
+
+		Spara hero till denna fas. 
+
+	Notes:
+
+		Kanske hero på pull, enrage är timed, inte procentbaserat. 
+
+--------------------------------------------------------------------------------------------------------------
+
+6 - Gorefiend:
+
+	Touch of Doom: exploderar efter 8 sekunder, spring iväg från raiden, till väggen.
+
+	Surging Shadows: sprid ut raiden 5 yards. 
+
+	Crushing Darkness: spiral utåt, stå inte i skit.
+
+	Shared Fate: länkar ihop tre spelare, en blir rootad. Spring till rootade snabbt.
+
+	Shadow of Death: tre random spelare dör efter fem sekunder, blir uppätna.
+
+	Spelare som dör blir uppätna.
+
+	Inuti Bossen:
+
+		Gorefiend's Corruption: alla uppätna får den, kan inte bli uppätna igen på 3 minuter.
+
+		Digest: spelare dör efter 40 sekunder, håll koll på tiden.
+
+		Shadowy Construct: döda innan den når mitten. Kan cc:as.
+
+		Tortured Essence: heala upp innan den når mitten (bara direkt healing).
+
+		Enraged Spirit:
+
+			Bellowing Shout: interrupta så ofta som möjligt (alltid).
+
+			Fel Fury: akta er från den.
+
+			Slam: vid 70% springer Enraged Spirit in i mitten.
+
+	Utanför:
+
+		Shadowy Construct: fixerar på en spelare. Döda.
+
+		Tortured Essence: slowar raiden med 50%, stackande raid-wide damage. Döda ASAP.
+
+		Enraged Spirit: 
+
+			Fel Flames: debuff på tank, swappa.
+
+			Bellowing Shout: interrupta alltid.
+
+			Raging Charge: akta er för charge.
+
+			Första prio efter Tortured Essence.
+
+	Feast of Souls: soaka samtliga souls, chaina healing cooldowns i denna fas.
+
+	Notes: 
+
+		Spara Hero till Feast of Souls kanske. 
+
+--------------------------------------------------------------------------------------------------------------
+
+7 - Shadow-Lord Iskar:
+
+	Markfas och luftfas. Antagligen tidsbaserat.
+
+	Markfas:
+
+		Fel Chakram: targetar tre spelare, flytta ut från raiden.
+
+		Fel Incineration: spring ut ifrån raiden (kanske koordinera)
+
+		Eye of Anzu: plocka upp direkt, swappa vid behov. (analysera swap target)
+
+		Phantasmal Winds: kasta Eye of Anzu till alla targetade spelare snabbt.
+
+		Phantasmal Wounds: heala till 90% eller ge Eye of Anzu, calla alltid.
+
+	Luftfas:
+
+		Första:
+
+			Currupted Priest: Döda innan luftfasen är slut.
+
+		Andra:
+
+			Shadowfel Warden:
+
+				Fel Counduit: kan interruptas av spelare med Eye of Anzu. Healers interrupta.
+
+		Tredje:
+
+			Fel Raven:
+
+				Phantasmal Corruption: kasta Eye of Anzu till targetad tank, sen tillbaka till healer.
+
+		Phantasmal Obliteration: kastar bomber på random spelare.
+
+		Fel Bomb: en bomb kan endast ses av Eye of Anzu. Ge till healer, dispella ASAP.
+
+		Focused Blast: stacka upp raiden, split damage.
+
+--------------------------------------------------------------------------------------------------------------
+
+8 - Socrethar the Eternal:
+
+	Robotfas och Bossfas.
+
+	Soulbound Construct:
+
+		Reverberating Blow: tank och 2 spelare soakar. 
+
+		Felblaze Charge: akta dig om du blir targetad, stå inte i elden.
+
+		Volatile Fel Orb: grön pil, lämna raiden. 
+
+		Fel Prison: flytta från denna ASAP, stunnar 30 sekunder (Darmac spears).
+
+		Overwhelming power: heala upp.
+
+	Socrethar: 
+
+		Tank hoppar in i Soulbound Construct, samma skills som förut.
+
+		Soulbound Construct hanterar adds.
+
+		Adds:
+
+			Haunting Soul: fixerar på random spelare, döda snabbt.
+
+			Sargerei Shadowcaller: dispella dotten, interrupta. Raiden hjälper till.
+
+			Dominator: döda ASAP. Flytta ut med debuff. Gör Socrethar immun mot damage och interrupt.
+
+		Apocalypse: använd healing cooldown.
+
+		Exert Dominance: interrupta ASAP.
+
+	Notes:
+
+		Döda adds i övergång från bossfas till robotfas.
+
+--------------------------------------------------------------------------------------------------------------
+
+9 - Fel Lord Zakuun
+
+	Fas 1:
+
+		Crystal Pillars: stå inte nära, soaka waves.
+
+		Fissures: spelare soakar alla utom en. Första närmst bossen, sen så nära varandra som möjligt.
+
+		Latent Energy: soaka inte waves eller fissures, då dör vi.
+
+		Soul Cleave: tanken undviker all skit, hoppa över stora vågor. Flytta från pelarna.
+
+		Cavitation: lila vågor mot random spelare. Melee flyttar till sidan om bossen.
+
+		Befouled: spelare flyttar ut, blir healade, flyttar in.
+
+	Fas 2:
+
+		Tanks stackar, annars dör ni.
+
+		Seeds of Destruction: Latent energy i mitten, andra lite runt. Spräng längst bak i rummet.
+
+		Healing cooldown när waves kommer mot gruppen.
+
+		Melee hanterar vågor som kommer förbi gruppen.
+
+
+	Fas 3: (<30%)
+
+		Undvik all skit. Stacka alla i mitten.
+
+		Healing cooldowns vid Seeds of Destruction.
+
+	Notes:
+
+		Ranged och healers soakar.
+
+		Kanske sprida ut för Seed of Corruption.
+
+--------------------------------------------------------------------------------------------------------------
+
+10 - Tyrant Velhari
+
+	Edict of Condemnation: spring in i melee eller stackar.
+
+	Touch of Harm: heala upp, dispella om det behövs.
+
+	Seal of Decay: byt på 3-4 stacks.
+
+	Fas 1: 
+
+		Aura of Oppression: stå stilla.
+
+		Annihilating Strike: flytta till mitten.
+
+		Searing Blaze: flytta så lite som möjligt.
+
+		Infernal Tempest: flytta efter två stycken, så lite som möjligt.
+
+		Inga healing cooldowns på Infernal Tempest.
+
+		Ancient Enforcer:
+
+			Enforcer's Onslaught: undvik.
+
+			Döda innan bossen når 70%.
+
+		Få ner bossen till 70% innan 2 minuter.
+
+	Fas 2:
+
+		Infernal Tempest och Annihilating Strike försvinner.
+
+		Aura of Contempt: mindre och mindre max-hp.
+
+		Tainted Shadows: tanks stackar inte.
+
+		Font of Corruption: spelare med debuff stackar.
+
+		Ancient Harbinger: (60%)
+
+			Harbinger's Mending: interrupta, svårare och svårare. Dispella boss i värsta fall.
+
+			Ignorera add, fokusera bara boss.
+
+		Healing cooldowns vid Edict of Condemnation.
+
+	Fas 3: (40%)
+
+		Döda Harbinger ASAP.
+
+		Aura of Malice: mer damage done och taken.
+
+		Bulwark of the Tyrant: targetar tank och random spelare, stå inte i skit.
+
+		Gavel of the Tyrant: knockback för hela raiden. Stacka på bossen, flytta runt rummet.
+
+		Ancient Sovereign: (30%)
+
+			Sovereign's Ward: 90% reduced boss damage i 20 sekunder. Döda ASAP.
+
+			Spara externals till tanks, använd alla healing cooldowns som finns.
+
+	Notes:
+
+		Tanks kanske tauntar på Annihilation Strike.
+
+--------------------------------------------------------------------------------------------------------------
+
+11 - Xhul'horac
+
+	Fas 1: (Fel)
+
+		Flytta bossen till höger eller vänster först, sen i cirkel.
+
+		Fel Strike: hög tank damage, använd mitigation.
+
+		Fel Surge: placera på kanten av plattformen.
+
+		Wild Pyromaniac:
+
+			Fel Orb: interrupta och döda ASAP.
+
+		Vanguard Akkelion:
+
+			Felblaze Flurry: en tank tar bossen, en tar adden. 
+
+			Chains of Fel: debuffade spelare flyttar sig från varandra.
+
+		Fel Touch: i 15 sekunder när du tar fire damage.
+
+	Fas 2: (Void) (65%)
+
+		Void Strike: samma som Fel Strike.
+
+		Void Surge: samma som Fel Surge, men bara en spelare.
+
+		Unstable Voidfiend: 
+
+			Volatile Voidstep: stå inte i skit, flytta er.
+
+		Omnus:
+
+			Withering Gaze: ökad damage för tank, ingen fara.
+
+			Black Hole: alla flyttar in samtidigt.
+
+		Voidtouched: i 15 sekunder när du tar shadow damage.
+
+		Shadowfel Annihilation: När du får både Fel Touch och Voidtouched.
+
+		Använd Shadowfel Annihilation för att ta bort eld. Rogues kan använda Feint/Cloak.
+
+	Fas 3: (35%)
+
+		Switchar mellan void och fel med timer.
+
+		En tank tankar void, en tankar fel.
+
+		Kan placera olika typer av eld nära varandra, men inte vid raiden.
+
+	Fas 4: (20%)
+
+		Inga adds spawnar.
+
+		Overwhelming Chaos: burst damage mot hela raiden. 20% starkare varje gång.
+
+		Healing cooldowns vid <10%, chaina allt.
+
+		Hantera fortfarande eld med Shadowfel Annihilation.
+
+
+Tanks
+Snakso Blood/UH
+Teríth Def/Fury
+
+
+Healers
+Venerated Disc/Holy
+Zinqier Holy/Ret
+Cooleja Resto/Feral
+Ligger Holy/Ret
+
+Ranged
+Khrubby Bal/Resto
+Jägarn MM/BM
+Pniece MM/BM
+Hönan MM/BM
+Kalaschnikow MM/BM
+
+Melee
+Azeman Fury/Arms
+Kimahri Frost/UH
+Xén Combat/Ass
+Lokthak Combat/Ass
+Molak Enh/Ele
+
+Extra
+Esca Frost/Arcane
+
+
+
+Warrior
+	
+	Prot: armor>mastery>crit>vers>haste>mult
+	Imbued Stone Sigil
+	Anzu's Cursed Plume
+	Worldbreaker's Resolve
+
+	Fury: haste>crit>mastery>mult>vers
+		  mastery>crit>mult>vers>haste med classtrinket
+
+	Empty Drinking Horn
+	Unending Hunger
+	Class Trinket
+
+	Arms: mastery>crit>mult>vers>haste
+	Worldbreakere's Resolve
+	Unending Hunger
+
+Paladin
+
+	Prot:
+
+	Ret:
+
+	Holy: crit>haste=mastery>spirit>mult>vers
+	Class Trinket
+	Demonic Phylactery
+	Choker of Whispered Promises
+	Polymorphic Cloak of Absorption
+	Stamped Felsteel Chestplate
+	Annihilan's Waistplate
+	Warhammer of Arrogance
+
+
+
+
+Hunter
+
+	MM: crit>mult>lika resten
+	Malicious Censer
+	Portal Key Signet
+
+	BM: haste>mastery>lika resten
+	Malicious Censer
+	Portal Key Signet
+
+	Surv:
+
+Rogue
+
+	Combat: haste>mult>lika resten
+	Mirror of the Blademaster
+	Demonblade Eviscerator
+
+	Ass: crit>mult>lika resten
+	Soul Capacitor
+	Bleeding Hollow Toxin Vessel
+	Fang of the Pit
+
+	Sub:
+
+
+Priest
+
+	Disc: spirit>mastery>haste>crit>multistrike>vers
+
+	Holy:
+
+	Shadow: crit>haste>multistrike>vers>mastery
+	Iron Reaver Piston
+	Unblinking Haze of Sethe
+	Prophecy of Fear
+	Repudiation of War
+
+Death Knight
+
+	Blood: mult>mastery>haste>crit>vers
+	Empty Drinking Horn
+	Discordant Chorus
+
+	UH: multistrike>mastery>crit>haste>vers
+	Class Trinket
+	Discordant Chorus
+
+
+	Frost: mastery>multistrike>crit>haste>vers
+	Discordant Chorus
+	Empty Drinking Horn
+
+Shaman
+
+	Enh:
+
+	Ele:
+
+	Resto:
+
+Mage
+
+	Arcane:
+
+	Frost:
+
+	Fire:
+
+
+Warlock
+
+
+
+Monk
+
+
+
+Druid
+
+	Guardian:
+
+	Boomkin: mastery>crit>haste>mult>vers
+	Desecrated Shadowmoon Insignia
+	Iron Reaver Piston
+	Unblinking Gaze of Sethe
+
+
+	Feral:
+
+	Resto: spirit>haste>mastery>mult>vers>crit
+	Demonic Phylactery
+	Class Trinket
+	Unstable Felshadow Emulsion
+
+
+Snakaso Trinkets:
+	
+	Vill inte ha:
+		Imbued Stone Sigil (Kormrok)
+		Rumbling Pebble (Kormrok)
+		Tyrant's Decree (Tyrant Velhari)
+		Reaper's Harvest (Archimonde)
+	
+	Vill ha för att testa:
+		Warlord's Unseeing Eye (N/HC) (Kilrogg Deadeye)
+
+	Vill ha för att använda ofta:
+		Discordant Chorus (HC) (Fel Lord Zakuun)
+		Empty Drinking Horn (N/HC) Mannoroth
+		(Unending Hunger (HC) (Gorefiend))
+
+
+
+Frukost
+Trenchy
+Froosh
+Rune
+Djdapi
+Dazed
+Lingzy
+Huntingbear
+Kazz
+
+
+
+
+
+
+Hej!
+
+Jag såg att du letar efter en ny guild på WoWProgress. Vi är en svensk guild på Darksorrow som letar efter spelare för att börja med mythic.
+
+Om det verkar intressant, kontakta mig på realID: cremefraiche#2243
+
+Mvh
+Khrubby-Darksorrow
+
+
+Samtliga spelare måste acceptera senast dagen innan, annars kommer de inte att ha någon prio på loot.
+
+De spelare som väljer Declined eller Tentative på eventet måste kontakta en officer och förklara varför, annars kommer de inte att ha någon prio på loot på nästa raid de dyker upp på.
+
+
+Samtliga spelare måste ha med sig egna runes av rätt sort, annars kommer de att behöva köpa runes från guildbanken.
+
+
+Tanks
+Snakso
+Terith
+
+Healers
+Cooleja
+Flooz
+Venerated
+Ligger
+Zinqier
+(Sami)
+
+
+Melee
+Azeman
+Kimahri
+Molak
+Xen
+
+Ranged
+Khrubby
+Morsgrisen
+Pniece
+Havoc
+(Sami)
+
+
+
+
+
+
+Warrior
+Azeman
+Terith
+(Paradarswe)
+
+Paladin
+Zinqier
+Ligger
+
+Hunter
+Kala
+Hönan
+Pniece
+Jägarn
+(Litendvärg)
+
+Rogue
+
+
+Priest
+(Haggman)
+(Lomme)
+
+
+DK
+Snakso
+Kimahri
+(Kulpåsen)
+
+Shaman
+Molak
+Flooz
+(Klistermärke)
+
+Mage
+Flintjr
+Esca
+(Hoodoor)
+
+Warlock
+(Wushen)
+(Glassroster)
+
+
+Monk
+(Xaap)
+
+Druid
+Khrubby
+Cooleja
+Morsgrisen
+(Cewqt)
+(Druidjäveln)
+
+Lootbanlista:
+
+Jägarn x3
+Kalaschikow
+
+Molak
+Cooleja x3
+Haggman

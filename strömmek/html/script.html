@@ -1,0 +1,403 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>script</title><meta name="generator" content="MATLAB 8.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2014-12-11"><meta name="DC.source" content="script.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, tt, code { font-size:12px; }
+pre { margin:0px 0px 20px; }
+pre.error { color:red; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#4">EXERCISE 2</a></li><li><a href="#5">EXERCISE 4</a></li></ul></div><pre class="codeinput">clear <span class="string">all</span>;
+clc;
+
+nu = 1.6151E-5;
+</pre><pre class="codeinput">[Y50, Uy50] = read_lab_data_JF3(<span class="string">'FPG_G01_X50'</span>);
+[Y74, Uy74] = read_lab_data_JF3(<span class="string">'FPG_G01_X74'</span>);
+[Y98, Uy98] = read_lab_data_JF3(<span class="string">'FPG_G01_X98'</span>);
+
+Y50 = Y50(3:end); Uy50 = Uy50(4:end);
+Y74 = Y74(3:end); Uy74 = Uy74(4:end);
+Y98 = Y98(3:end); Uy98 = Uy98(4:end);
+
+<span class="comment">% Y50 = [0; Y50]; Uy50 = [0; Uy50];</span>
+<span class="comment">% Y74 = [0; Y74]; Uy74 = [0; Uy74];</span>
+<span class="comment">% Y98 = [0; Y98]; Uy98 = [0; Uy98];</span>
+
+[Ywall50, ny50] = FPG_LAB_JF_P1(Y50, Uy50);
+[Ywall74, ny74] = FPG_LAB_JF_P1(Y74, Uy74);
+[Ywall98, ny98] = FPG_LAB_JF_P1(Y98, Uy98);
+
+Ue50 = .5*(Uy50(end)+Uy50(end-1));
+Ue74 = .5*(Uy74(end)+Uy74(end-1));
+Ue98 = .5*(Uy98(end)+Uy98(end-1));
+
+Y50 = [0; Y50-Ywall50]; Uy50 = [0; Uy50];
+Y74 = [0; Y74-Ywall74]; Uy74 = [0; Uy74];
+Y98 = [0; Y98-Ywall98]; Uy98 = [0; Uy98];
+
+Uy50int = 1-Uy50/Ue50; deltaS50 = trapz(Y50, Uy50int);
+Uy74int = 1-Uy74/Ue74; deltaS74 = trapz(Y74, Uy74int);
+Uy98int = 1-Uy98/Ue98; deltaS98 = trapz(Y98, Uy98int);
+
+Uy50thetaint = (Uy50/Ue50).*(1-Uy50/Ue50); theta50 = trapz(Y50, Uy50thetaint);
+Uy74thetaint = (Uy74/Ue74).*(1-Uy74/Ue74); theta74 = trapz(Y74, Uy74thetaint);
+Uy98thetaint = (Uy98/Ue98).*(1-Uy98/Ue98); theta98 = trapz(Y98, Uy98thetaint);
+
+H50 = deltaS50/theta50;
+H74 = deltaS74/theta74;
+H98 = deltaS98/theta98;
+
+H = (H50 + H74 + H98) / 3; <span class="comment">%=&gt; n = 0.19</span>
+
+n=(ny50 + ny74 + ny98)/3;
+[f, fp, fpp, fppp, eta] = FS_solver_JF(n);
+
+[f50, fp50, fpp50, fppp50, eta50] = FS_solver_JF(ny50);
+[f74, fp74, fpp74, fppp74, eta74] = FS_solver_JF(ny74);
+[f98, fp98, fpp98, fppp98, eta98] = FS_solver_JF(ny98);
+
+b50 = trapz(eta50, (1-fp50));
+b74 = trapz(eta74, (1-fp74));
+b98 = trapz(eta98, (1-fp98));
+
+b = trapz(eta, (1-fp));
+</pre><pre class="codeoutput">
+par =
+
+    0.0140   -0.1329
+
+
+par =
+
+    0.0469   -0.1030
+
+
+par =
+
+    0.0498   -0.0771
+
+</pre><img vspace="5" hspace="5" src="script_01.png" alt=""> <pre class="codeinput">h = figure(1);
+clf
+hold <span class="string">on</span>
+title(<span class="string">'Fig 1: unscaled profiles'</span>);
+xlabel(<span class="string">'Y (mm)'</span>);
+ylabel(<span class="string">'U (m/s)'</span>);
+plot(Uy50, Y50, <span class="string">'r'</span>)
+plot(Uy74, Y74, <span class="string">'g'</span>)
+plot(Uy98, Y98, <span class="string">'b'</span>)
+legend(<span class="string">'50'</span>,<span class="string">'74'</span>,<span class="string">'98'</span>)
+saveas(h, <span class="string">'figure_1'</span>, <span class="string">'jpg'</span>);
+
+
+h = figure(2);
+clf
+hold <span class="string">on</span>
+title(<span class="string">'Fig 2: scaled profiles including Falkner-Skan profile'</span>);
+xlabel(<span class="string">'\eta'</span>);
+ylabel(<span class="string">'u/U_e'</span>);
+plot(Uy50/Ue50, Y50/deltaS50, <span class="string">'r'</span>)
+plot(Uy74/Ue74, Y74/deltaS74, <span class="string">'g'</span>)
+plot(Uy98/Ue98, Y98/deltaS98, <span class="string">'b'</span>)
+plot(fp, eta, <span class="string">'r'</span>)
+<span class="comment">% plot(fp, eta/b, 'b')</span>
+saveas(h, <span class="string">'figure_2'</span>, <span class="string">'jpg'</span>);
+<span class="comment">% Att FS inte ligger p&aring; v&aring;ra prfiler kan bero p&aring; att FS</span>
+<span class="comment">% anv&auml;nder eta =  y/delta, medan vi anv&auml;nder eta* = y /delta*</span>
+
+h = figure(3);
+clf
+hold <span class="string">on</span>
+title(<span class="string">'Fig 3: scaled profiles including scaled Falkner-Skan profile'</span>);
+xlabel(<span class="string">'\eta'</span>);
+ylabel(<span class="string">'u/U_e'</span>);
+plot(Uy50/Ue50, Y50/deltaS50, <span class="string">'r'</span>)
+plot(Uy74/Ue74, Y74/deltaS74, <span class="string">'g'</span>)
+plot(Uy98/Ue98, Y98/deltaS98, <span class="string">'b'</span>)
+plot(fp, eta/b, <span class="string">'r*'</span>)
+<span class="comment">% plot(fp, eta/b, 'r*')</span>
+saveas(h, <span class="string">'figure_3'</span>, <span class="string">'jpg'</span>);
+
+<span class="comment">% ny50 = 0.0139871969458492</span>
+<span class="comment">% ny74 = 0.046878890991211</span>
+<span class="comment">% ny98 = 0.0498466793837723</span>
+<span class="comment">% n = 0.0369042557736109</span>
+<span class="comment">%b = 1.54869242062851</span>
+<span class="comment">%H50 = 2.5473563198362</span>
+<span class="comment">%H74 = 2.47624859491766</span>
+<span class="comment">%H98 = 2.47840147379582</span>
+<span class="comment">%H_avg = 2.50066879618323</span>
+</pre><img vspace="5" hspace="5" src="script_02.png" alt=""> <img vspace="5" hspace="5" src="script_03.png" alt=""> <img vspace="5" hspace="5" src="script_04.png" alt=""> <h2>EXERCISE 2<a name="4"></a></h2><pre class="codeinput">rho = 1.1823;
+rho_meth = 776;
+g = 9.82;
+beta = deg2rad(20);
+
+[X,h] = read_lab_data_JF3(<span class="string">'PressureHeight'</span>);
+
+delta_h = h(1:end-1) - h(end);
+delta_p = rho_meth * g * delta_h * sin(beta);
+
+
+U_inf = sqrt(2*delta_p / rho);
+
+h = figure(4);
+nx = Ufit_JF(X, U_inf); <span class="comment">%nx = 0.0590860830884698</span>
+saveas(h, <span class="string">'stream_velocity_fit'</span>, <span class="string">'jpg'</span>);
+</pre><img vspace="5" hspace="5" src="script_05.png" alt=""> <img vspace="5" hspace="5" src="script_06.png" alt=""> <h2>EXERCISE 4<a name="5"></a></h2><pre class="codeinput">clc
+dS74 = deltaS74/1000; <span class="comment">%convert mm to m</span>
+t74 = theta74/1000; <span class="comment">%convert mm to m</span>
+delta_exp = dS74;
+
+delta_theo = delta_exp / b;
+
+cf_theo = 2*nu/delta_theo / Ue74 * fpp(1);
+
+
+
+fpp_ny = fpp;
+[~,~,fpp_nx,~,~] = FS_solver_JF(nx);
+
+Re = Ue74 * t74 / nu;
+c = t74/delta_theo;
+cf_exp = @(n) 2*(c^2*(1-n)/2/Re + n*(c/Re)^2 * Ue74 / nu *(dS74 + 2*t74));
+cf_exp_nx = cf_exp(nx);
+cf_exp_ny = cf_exp(n);
+
+<span class="comment">%cf_exp_nx = 2 * ( theta74 / delta_theo ) / Re_theta * fpp_nx(1);</span>
+<span class="comment">%cf_exp_ny = 2 * ( theta74 / delta_theo ) / Re_theta * fpp_ny(1);</span>
+
+cf_theo; <span class="comment">% 0.00118478917476822</span>
+cf_exp_nx; <span class="comment">%0.00136174144543953</span>
+cf_exp_ny; <span class="comment">%0.00119831849196666</span>
+cf_exp_nx / cf_theo; <span class="comment">%1.14935338239052</span>
+cf_exp_ny / cf_theo; <span class="comment">%1.01141917691904</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2013b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+clear all;
+clc;
+
+nu = 1.6151E-5;
+
+
+%%
+[Y50, Uy50] = read_lab_data_JF3('FPG_G01_X50');
+[Y74, Uy74] = read_lab_data_JF3('FPG_G01_X74');
+[Y98, Uy98] = read_lab_data_JF3('FPG_G01_X98');
+
+Y50 = Y50(3:end); Uy50 = Uy50(4:end);
+Y74 = Y74(3:end); Uy74 = Uy74(4:end);
+Y98 = Y98(3:end); Uy98 = Uy98(4:end);
+
+% Y50 = [0; Y50]; Uy50 = [0; Uy50];
+% Y74 = [0; Y74]; Uy74 = [0; Uy74];
+% Y98 = [0; Y98]; Uy98 = [0; Uy98];
+
+[Ywall50, ny50] = FPG_LAB_JF_P1(Y50, Uy50);
+[Ywall74, ny74] = FPG_LAB_JF_P1(Y74, Uy74);
+[Ywall98, ny98] = FPG_LAB_JF_P1(Y98, Uy98);
+
+Ue50 = .5*(Uy50(end)+Uy50(end-1));
+Ue74 = .5*(Uy74(end)+Uy74(end-1));
+Ue98 = .5*(Uy98(end)+Uy98(end-1));
+
+Y50 = [0; Y50-Ywall50]; Uy50 = [0; Uy50];
+Y74 = [0; Y74-Ywall74]; Uy74 = [0; Uy74];
+Y98 = [0; Y98-Ywall98]; Uy98 = [0; Uy98];
+
+Uy50int = 1-Uy50/Ue50; deltaS50 = trapz(Y50, Uy50int);
+Uy74int = 1-Uy74/Ue74; deltaS74 = trapz(Y74, Uy74int);
+Uy98int = 1-Uy98/Ue98; deltaS98 = trapz(Y98, Uy98int);
+
+Uy50thetaint = (Uy50/Ue50).*(1-Uy50/Ue50); theta50 = trapz(Y50, Uy50thetaint);
+Uy74thetaint = (Uy74/Ue74).*(1-Uy74/Ue74); theta74 = trapz(Y74, Uy74thetaint);
+Uy98thetaint = (Uy98/Ue98).*(1-Uy98/Ue98); theta98 = trapz(Y98, Uy98thetaint);
+
+H50 = deltaS50/theta50;
+H74 = deltaS74/theta74;
+H98 = deltaS98/theta98;
+
+H = (H50 + H74 + H98) / 3; %=> n = 0.19
+
+n=(ny50 + ny74 + ny98)/3;
+[f, fp, fpp, fppp, eta] = FS_solver_JF(n);
+
+[f50, fp50, fpp50, fppp50, eta50] = FS_solver_JF(ny50);
+[f74, fp74, fpp74, fppp74, eta74] = FS_solver_JF(ny74);
+[f98, fp98, fpp98, fppp98, eta98] = FS_solver_JF(ny98);
+
+b50 = trapz(eta50, (1-fp50));
+b74 = trapz(eta74, (1-fp74));
+b98 = trapz(eta98, (1-fp98));
+
+b = trapz(eta, (1-fp));
+
+%%
+
+h = figure(1);
+clf
+hold on
+title('Fig 1: unscaled profiles');
+xlabel('Y (mm)');
+ylabel('U (m/s)');
+plot(Uy50, Y50, 'r')
+plot(Uy74, Y74, 'g')
+plot(Uy98, Y98, 'b')
+legend('50','74','98')
+saveas(h, 'figure_1', 'jpg');
+
+
+h = figure(2);
+clf
+hold on
+title('Fig 2: scaled profiles including Falkner-Skan profile');
+xlabel('\eta');
+ylabel('u/U_e');
+plot(Uy50/Ue50, Y50/deltaS50, 'r')
+plot(Uy74/Ue74, Y74/deltaS74, 'g')
+plot(Uy98/Ue98, Y98/deltaS98, 'b')
+plot(fp, eta, 'r')
+% plot(fp, eta/b, 'b')
+saveas(h, 'figure_2', 'jpg');
+% Att FS inte ligger på våra prfiler kan bero på att FS 
+% använder eta =  y/delta, medan vi använder eta* = y /delta*
+
+h = figure(3);
+clf
+hold on
+title('Fig 3: scaled profiles including scaled Falkner-Skan profile');
+xlabel('\eta');
+ylabel('u/U_e');
+plot(Uy50/Ue50, Y50/deltaS50, 'r')
+plot(Uy74/Ue74, Y74/deltaS74, 'g')
+plot(Uy98/Ue98, Y98/deltaS98, 'b')
+plot(fp, eta/b, 'r*')
+% plot(fp, eta/b, 'r*')
+saveas(h, 'figure_3', 'jpg');
+
+% ny50 = 0.0139871969458492
+% ny74 = 0.046878890991211
+% ny98 = 0.0498466793837723
+% n = 0.0369042557736109
+%b = 1.54869242062851
+%H50 = 2.5473563198362
+%H74 = 2.47624859491766
+%H98 = 2.47840147379582
+%H_avg = 2.50066879618323
+
+%% EXERCISE 2
+
+
+rho = 1.1823; 
+rho_meth = 776;
+g = 9.82;
+beta = deg2rad(20);
+
+[X,h] = read_lab_data_JF3('PressureHeight');
+
+delta_h = h(1:end-1) - h(end);
+delta_p = rho_meth * g * delta_h * sin(beta);
+
+
+U_inf = sqrt(2*delta_p / rho);
+
+h = figure(4);
+nx = Ufit_JF(X, U_inf); %nx = 0.0590860830884698
+saveas(h, 'stream_velocity_fit', 'jpg');
+
+
+
+%% EXERCISE 4
+clc
+dS74 = deltaS74/1000; %convert mm to m
+t74 = theta74/1000; %convert mm to m
+delta_exp = dS74;
+
+delta_theo = delta_exp / b;
+
+cf_theo = 2*nu/delta_theo / Ue74 * fpp(1);
+
+
+
+fpp_ny = fpp;
+[~,~,fpp_nx,~,~] = FS_solver_JF(nx);
+
+Re = Ue74 * t74 / nu;
+c = t74/delta_theo;
+cf_exp = @(n) 2*(c^2*(1-n)/2/Re + n*(c/Re)^2 * Ue74 / nu *(dS74 + 2*t74));
+cf_exp_nx = cf_exp(nx);
+cf_exp_ny = cf_exp(n);
+
+%cf_exp_nx = 2 * ( theta74 / delta_theo ) / Re_theta * fpp_nx(1);
+%cf_exp_ny = 2 * ( theta74 / delta_theo ) / Re_theta * fpp_ny(1);
+
+cf_theo; % 0.00118478917476822
+cf_exp_nx; %0.00136174144543953
+cf_exp_ny; %0.00119831849196666
+cf_exp_nx / cf_theo; %1.14935338239052
+cf_exp_ny / cf_theo; %1.01141917691904
+
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>

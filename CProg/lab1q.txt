@@ -1,0 +1,147 @@
+Where can you find the manual to g++?
+
+	https://gcc.gnu.org/onlinedocs/
+
+What is the purpose of -Wall and -g, when passed as arguments to g++?
+
+	gcc -Wall enables all compiler's warning messages. This option should always be used, in order to generate better code.
+
+	-g requests that the compiler and linker generate and retain symbol information in the executable itself.
+
+How can you store the previous mentioned flags in a variable in the makefile?
+
+	# I am a comment, and I want to say that the variable CC will be
+	# the compiler to use.
+	CC=g++
+	# Hey!, I am comment number 2. I want to say that CFLAGS will be the
+	# options I'll pass to the compiler.
+	CFLAGS=-g -Wall
+
+	all:
+		$(CC) $(CFLAGS) main.cpp
+
+Find and write down 3 other arguments to g++ that you think might be useful and write a short motivation why you selected these specific 3 arguments.
+
+	-ffast-math : speeds up flating point operations in some cases, but must be used with care.
+	-O# : enables optimizing by the compiler. Should also be used with care.
+	-o : enables specifying the name of the output executable
+
+What is the difference between an object file, and an executable?
+
+	object files have unresolved external references. executable files do not. 
+
+What does git show HEAD~:01/makefile show?
+
+	The previous commit.
+
+What does git show HEAD:01/makefile show?
+
+	The current version.
+
+What would git show HEAD~~:01/makefile show?
+
+	The version two commits back.
+
+What does the ~ in the previous git show commands mean?
+
+	Goes back one commit in history.
+
+Why can you not ommit 01 in the previous commands (i.e. git show HEAD~:makefile instead of git show HEAD~:01/makefile)
+
+
+
+Sometimes you may need to do a git pull before you can do a git push how can that be?
+
+What is the purpose of the .git_ignore file and why should *.o *.out *.exe be in this file when developing C++?
+
+If you invoke touch hello.cpp prior to invoking make, how many files were rebuilt?
+
+Why?
+
+Why do you think make checks the modification timestamp of the relevant files as part of deciding what to do?
+
+What is the difference between an implicit rule and an explicit rule in a makefile?
+
+	An explicit rule says when and how to remake one or more files, called the rule's targets. It lists the other files that the targets depend on, call the prerequisites of the target, and may also give commands to use to create or update the targets.
+
+	An implicit rule says when and how to remake a class of files based on their names. It describes how a target may depend on a file with a name similar to the target and gives commands to create or update such a target.
+
+What does \$* mean inside a makefile?
+
+	Wildcard, matches anything.
+
+
+Hello world questions
+
+	What is the purpose of std::cout, std::cerr, and std::clog, respectively?
+
+		stdout and stderr are different streams, even though they both refer to console output by default. Redirecting (piping) one of them (e.g. program.exe >out.txt) would not affect the other.
+
+		std::clog is buffered, unlike std::cerr, and should be used for logging.
+
+	How does #include work?
+
+		It literally copy/pastes the entire contents of the given file in place of the #include line.
+
+
+debugging questions
+
+	Why does not powerof return the expected value (16), when invoked with 2 and 4?
+
+		the for loop line is terminated with a semicolon, which means that the next row is not included in the for loop (which is empty).
+
+	Why does not adding_a_decimal output 100000?
+
+		floating point numbers always carry an error which is O(2^-(num_bits-exp_bits)) at most (can be 0). with the loop provided, that error propagates and becomes a million times larger. since num_bits = 23, the error is proportional to 2^-23. 1000000*2^-23 = 0.12, a maximum 12% error.
+
+	Describe how weird.out is invoked by echo '3.1415' | ./weird.out
+
+	Why does not y compare equal to 3.1415?
+
+		Floating point arithmetics are approximative, and thus the equality is not guaranteed. For example: a/3.0*3.0 may not equal a. To compare floating point numbers, use abs(a-b) < tol. tol is a tolerance variable, which should optimally be set for each specific comparison.
+
+	Is there any difference in behavior if we compare y to 3.1415f, if so; why?
+
+		Without the "f", 3.1415 is interpreted as a double, which makes the comparison false because of rounding errors. This can be confirmed by switching 3.1415 with any number 2^-n, which makes the rounding error =0, and the comparison true. 
+
+		When both y and 3.1415 are doubles, the comparison returns true, also when they're both floats. However, the rounding error must be =0 if they are double/float or float/double.
+
+	Describe and motivate the recommended method to use when trying to determine if two floating-point values are equal.
+
+		The usual method used is to evaluate "abs(a-b) < tolerance". This method has its weaknesses. If tolerance is specified to a fix value (e.g. 0.001), then the expression will return true for all numbers a,b which are smaller than 0.0005, since a+b < 0.001. 
+
+		For numbers where 2^-23*2^exp > 0.001, rounding errors in the last bit yield unwanted behaviour, which means that rounding errors make the expression false.
+
+unit test questions
+
+	Why is it important to test the boundary conditions of an implementation, especially in the case of count_if_followed_by?
+
+	Describe how the testcase tests if a pointer is accessing an element outside the range specified
+
+
+class construction questions
+
+	What constructors are invoked, and when? List the corresponding lines and name the invoked constructor
+
+	Will there be any temporaries created, if so; when?
+
+	What will happen if we try to free a dynamically allocated array through delete p, instead of delete [] p?
+
+
+valgrind
+
+	valgrind indicates that there is something wrong with complex.cpp; what, and why?
+
+		delete should be replaced with delete[], since an array is being deleted.
+
+	There is source file named bad_plumming.cpp, copy and compile this program, then run valgrind to analyze the correctness and behavior.
+
+		The values in v are not initialized, and this leads to undefined behaviour.
+
+	valgrind indicates that the program suffers from a few problems, which and why?
+
+	If you comment out the entire if-block in foo, is there any difference in how much memory that is leaked?
+
+		No.
+
+	Why is it that valgrind still issue diagnostics related to memory management?

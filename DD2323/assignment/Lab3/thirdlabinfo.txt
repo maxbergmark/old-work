@@ -1,0 +1,2 @@
+Some edges have some stray pixels, I have not been able to find the bug.
+Otherwise everything works as it should.

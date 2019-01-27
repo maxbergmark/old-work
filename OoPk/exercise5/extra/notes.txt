@@ -1,0 +1,100 @@
+
+
+2 - Socket
+
+	Klassen Socket används för hantering av TCP-anslutningar i Java.
+	För att ansluta till en server så krävs IP-address och portnummer. 
+	IP-addressen skrivs som en sträng.
+	För att diagnostisera beteendet av ett program, kontrollera vilka exceptions som kastas.
+
+3 - ServerSocket
+
+	För att lyssna på inkommande anslutningar så krävs enbart portnummer.
+	ServerSocket.accept() accepterar en ny anslutning.
+	accept() returnerar ett Socket-objekt, som kan användas precis som ett vanligt Socket-objekt.
+	Även här finns flera olika exceptions att hålla koll på.
+
+4 - Client/ServerDemo.java
+
+	Skrivs ej under övningen.
+
+	Servern lyssnar på en inkommande anslutning.
+	När klienten anslutit så kan den skicka meddelanden, och får tillbaka samma meddelande i VERSALER som svar från servern.
+	PrintWriter/BufferedReader sköter läsning och skrivning till Socket.
+	Många try-catches för att kunna hantera felaktiga uppkopplingar.
+	While-loop för att skicka/ta emot meddelanden. 
+
+5 - Threads
+
+	Nästa del av den här övningen så kommer vi kika på trådar.
+	I slutet ska vi försöka blanda in lite trådar till våra sockets.
+	Två huvudsakliga sätt att använda trådar, antingen ärva från Thread eller implementera Runnable.
+	I båda fallen behövs en run()-metod, som kommer att köras på en separat tråd.
+	Olika trådar kan komma åt samma minne, och beter sig precis som vanlig Java-kod i många avseenden.
+	Det kan dock uppstå interferens.
+
+6 - ThreadDemo.java
+
+	Skrivs under övningen.
+	Inga imports.
+	extends Thread.
+	public void run();
+	psvm
+	new ThreadDemo();
+	thr.start();
+	sop("hello from x");
+
+7 - RunnableDemo.java
+
+	Skrivs under övningen.
+	Som ovanstående, men implements Runnable.
+	Thread thr = new Thread(new RunnableDemo());
+	thr.start();
+	Resten identiskt.
+
+8 - MyTimer
+
+	Trådar används av exempelvis Timer-klassen. 
+	För att se hur det kan tillämpas så ska vi skriva en egen Timer-klass.
+
+	BlinkKnapp.java kopieras från övning 4.
+	MyTimer skrivs från grunden.
+
+	import java.awt.event.*;
+	import java.util.*;
+	implements Runnable
+	List<ActionListener> listeners;
+	int delay;
+	int initDelay;
+	Thread thr = null;
+
+	run() har try-catch, sleep(init), while
+	for (ActionListener a : listeners) {
+		a.actionPerformed(new ActionEvent(this,
+			ActionEvent.ACTION_FIRST, "Tick!"));
+	}
+	sleep(delay)
+	catch (InterruptedException e)
+
+	MyTimer(delay, ActList), new ArrayList, addActList, this.delay=delay;
+	addActList(ActList a) listeners.add(a);
+	start() if (thr==null) {thr=new Thread(this);thr.start()}
+	setDelay(ms)
+	setInitialDelay(ms)
+
+
+9 - MultiServer.java
+
+	För att kombinera det här så ska vi försöka skapa en likadan server som vi hade tidigare, men som kan hantera flera användare samtidigt. 
+
+	Skapa klassen EchoThread.java
+	Rad 12-17+21 åker in i EchoThread
+	EchoThread extends Thread
+	Rad 46-84 åker in i run()
+	Efter serverSocket.accept() så startas en ny EchoThread.
+	EchoThread(Socket socket)
+	Ändra System.exit(1); i EchoThread till return;
+
+	Server på (52.56.38.143, 4444)
+	Få egen public IP med "curl ipinfo.io/ip"
+	local IP med "ifconfig | grep inet\ addr"

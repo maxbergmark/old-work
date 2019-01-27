@@ -1,0 +1,57 @@
+1 b) 2^(32-14) - 2
+
+
+72.33.144.0/20 splittas till två nätverk, 72.33.144.0/21 och 72.33.152.0/21
+
+A: 72.33.144.0/23
+B: 72.33.146.0/23
+F: 72.33.148.0/29
+
+C: 72.33.152.0/23
+D: 72.33.154.0/23
+E: 72.33.156.0/23
+G: 72.33.158.0/29
+
+H: 72.33.158.8/29
+
+R1 forwarding table:
+
+Destination		Next Hop		Flags
+72.33.144.0/21	72.33.158.10	UG
+72.33.152.0/21	72.33.158.11	UG
+72.33.158.10/32	-				U
+
+3: IPv4 Forwarding
+
+a) 223.180.160.79 ->  223.180.128.0/17		m2
+
+b) 220.142.218.41 -> 220.142.218.32/27		m0
+
+c) 249.21.44.19   ->     249.21.0.0/17		m2
+
+d) 13.57.197.137  ->         0.0.0.0/0		m0
+
+e) 19.197.72.162  ->  19.197.72.160/29		m1
+
+
+4: IPv4 Options
+
+a)
+
+End Of Option List: A single byte option that marks the end of all options included in this segment. This only needs to be included when the end of the options doesn't coincide with the end of the TCP header.
+
+No-Operation: A “spacer” that can be included between options to align a subsequent option on a 32-bit boundary if needed.
+
+b) 
+
+The recorded route is saved within the header, which has a maximum length of 8*32 = 256 bits. Since each IPv4 address takes up 32 bits, a maximum number of 8 addresses can physically be stored in the header. The actual number is lower, because the beginning of the header contains other information.
+
+c)
+
+The second option, security, must be copied on fragmentation. The security option provides a way for hosts to send security, compartmentation, handling restrictions, and TCC (closed user group) parameters.
+
+d)
+
+The IPv6 extension headers provide the same functionality as the IPv4 options, but can be a lot faster in actual use. For IPv4, each router must look at the entire header to find out information about the datagram, but in IPv6, routers can check only the main header unless told otherwise.
+
+Extra options are included in extension headers, but these are usually not processed by every router when sending the datagram. 

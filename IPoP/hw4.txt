@@ -1,0 +1,100 @@
+* DNS (30p)
+** Use a tool such as “dig”, together with your recently acquired knowledge about DNS, to answer the following questions. Important: whenever you answer with a domain name, it must be a Fully Qualified Domain Name (FQDN).
+
+*** a) What is the domain name that corresponds to IP address “192.16.125.102”? Your answer should include the dig command you use. (5 p)
+
+	We dig by sending "dig -x 192.16.125.102", and we get the answer that the address belongs to mail.ssvl.kth.se.
+
+*** b) To which zone does it belong? Give all domain names and IP addresses of the name servers for the zone. What dig command(s) did you use? (15 p)
+
+	ns.ssvl.kth.se. 	- 192.16.124.50
+	gaia.it.kth.se. 	- 130.237.212.6
+	ns2.ssvl.kth.se. 	- 192.16.125.100
+
+*** c) What are the delegations that lead to this zone? Give the full chain of delegations. For each step, specify the zone that it is delegated (as a domain name), and the zone from which it is delegated (as a domain name). (10 p)
+
+	ns2.ssvl.kth.se. from b.ns.kth.se.
+
+	b.ns.kth.se. from d.ns.se.
+	
+	c.ns.se. from b.root-servers.net
+	
+	b.root-servers.net from 130.237.72.200
+
+	The address 130.237.72.200 belongs to res2.ns.kth.se.
+
+
+* IPsec (15p)
+
+** a) Briefly summarize the security services that IPsec provides. (5 p)
+
+	IPsec provides a boundary between protected and unprotected parts of a network. Packets which are transferred through the boundary are treated in a special way, either by letting them through, discarding them, or analyzing them.
+
+	Only the recipient can understand which data has been sent. All data is guaranteed to arrive unchanged. The data is given a signature, which means that its origin can be tracked. Also, any datagram is processed only once, even if it's sent multiple times.
+
+** b) An ESP encapsulated IP packet arrives to the destination. Briefly describe how the destination
+figures out what cryptographic algorithm to use to decrypt the packet. (5 p)
+
+	The first 32 bits of the ESP is the Security Parameters Index (SPI). It is used to determine the security attributes of a packet, using a Security Association previously negotiated between two networks.
+
+** c) The packet below illustrates and IPv6 packet protected using IPsec. Is it tunnel mode or transport mode? Redraw the packet and show how the different parts of the packet can be protected using the services mentioned in a) above. (5 p)
+
+   
+
+
+* IKE (20p)
+
+** a) To protect against certain attacks, cookies and nonces are used in IKE. Redraw the figure and show where to add cookies and nonces. Against what type of attack are cookies used? Against what type of attack are nonces used? (10p)
+
+Cookies protect against DoS attacks. If the client does not provide the cookie, the server will simply discard all incoming packets. 
+
+Nonces protect against replay attacks. Since every nonce is used only once, any packet with a previously used nonce can be discarded. 
+
+
+Alice 						Bob
+
+Crypto Proposal+initiator cookie
+------------------------------>
+Crypto Choice+initiator cookie+responder cookie
+<------------------------------
+g^a mod p + cookie pair + nonce_A
+------------------------------>
+g^b mod p + cookie pair + nonce_B
+<------------------------------
+g^ab mod p {"Alice", proof I'm Alice}
+------------------------------>
+g^ab mod p {"Bob", proof I'm Bob}
+<------------------------------
+
+
+** b) Cookies are used in IKE to protect against denial-of-service attacks where an impostor launches packets with forged IP source addresses, according to the simple illustration below. The cookies used should be stateless. What does this mean and how is it achieved in IKE? (10p)
+
+The cookie is stateless in that it is exactly the same if a client connects a second time. It is usually the hash of the clients IP address and a secret number stored in the server. If a client attempts to sent many requests from different forged IP addresses, the server will generate cookies for each of the packets and send them back to the forged IP addresses, and not to the client. If the client wishes to continue the communication, it must know all those cookies, and include them in the next messages for every forged address. Since the client did not receive the cookies, it is impossible to continue with the communication. 
+
+
+* Firewalls (15p)
+
+** We have discussed two types of firewalls. Mention these two types and briefly describe how they work.
+
+   Packet filter: an internal administered network is connected to the internet via a router firewall. The router decides whether a packet is accepted or not, and discards the declined packets.
+
+   Packet filter has two default policies: default discard and default forward. It says what to do with a packet that is not explicitly mentioned in the security standard for that particular firewall.
+
+   Application level gateway: This firewall splices and relays two application-specific connections. A common example of this is a proxy server, or a HTTP gateway. This type of firewall has simpler filtering rules than a packet filter firewall, but has the setback that each application must implement its own proxy.
+
+* NAT (20p)
+
+** Consider the figure below. Assume that host 10.1.1.4 on a private network (10.1.1.0/24) sends an HTTP request through its NAT box to a web server on address 130.237.20.12 and that this web server answers with an HTTP response back to the host. Fill in source address, source port, destination address, and destination port in the IP packets 1-4 in the figure. Also, fill in the NAT table as it will look when the four packets have been exchanged.
+
+   |Packet number	|Source address |Dest address 	|Source port 	|Dest port 	|
+   |---------------+---------------+---------------+---------------+-----------|
+   |1				|10.1.1.4		|130.237.20.12	|X 				|80			|
+   |2				|139.75.16.3	|130.237.20.12	|Y 				|80			|
+   |3				|130.237.20.12	|139.75.16.3	|Z 				|Y 			|
+   |4 				|130.237.20.12	|10.1.1.4		|W				|X 			|
+
+   After the communication has been completed, the NAT table looks like this:
+
+   |Local IP 	|Local Port |Internet IP 	|Source Port|
+   |------------+-----------+---------------+-----------|
+   |10.1.1.4	|X 			|139.75.16.3	|Y 			|

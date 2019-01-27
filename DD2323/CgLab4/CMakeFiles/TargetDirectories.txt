@@ -1,0 +1,3 @@
+C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeFiles/ALL_BUILD.dir
+C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeFiles/SecondLab2.dir
+C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeFiles/ZERO_CHECK.dir

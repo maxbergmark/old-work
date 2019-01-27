@@ -1,0 +1,154 @@
+Determining if files pthread.h exist failed with the following output:
+Change Dir: C:/Users/Max/Dropbox/Programmering/DD2323/CgLab2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec175205729/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec175205729.dir\build.make CMakeFiles/cmTryCompileExec175205729.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Max/Dropbox/Programmering/DD2323/CgLab2/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec175205729.dir/CheckIncludeFiles.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec175205729.dir\CheckIncludeFiles.c.obj   -c C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c
+C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c:2:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTryCompileExec175205729.dir\build.make:56: recipe for target 'CMakeFiles/cmTryCompileExec175205729.dir/CheckIncludeFiles.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTryCompileExec175205729.dir/CheckIncludeFiles.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Max/Dropbox/Programmering/DD2323/CgLab2/CMakeFiles/CMakeTmp'
+Makefile:116: recipe for target 'cmTryCompileExec175205729/fast' failed
+mingw32-make.exe: *** [cmTryCompileExec175205729/fast] Error 2
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(void){return 0;}
+
+Determining if files pthread.h exist failed with the following output:
+Change Dir: C:/Users/Max/Dropbox/Programmering/DD2323/CgLab2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTryCompileExec3702541331.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2015-04-07 14:33:45.
+Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3702541331.dir\Debug\".
+  Creating directory "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3702541331.dir\Debug\cmTryCom.19C6BC41.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3702541331.dir\Debug\cmTryCom.19C6BC41.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /W1 /WX- /O2 /Oy- /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3702541331.dir\Debug\\" /Fd"cmTryCompileExec3702541331.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue  -g C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /W1 /WX- /O2 /Oy- /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3702541331.dir\Debug\\" /Fd"cmTryCompileExec3702541331.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue  -g C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c
+  
+cl : Command line warning D9002: ignoring unknown option '-g' [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj]
+  CheckIncludeFiles.c
+C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj]
+Done Building Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  cl : Command line warning D9002: ignoring unknown option '-g' [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj]
+
+
+"C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\cmTryCompileExec3702541331.vcxproj]
+
+    1 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.41
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(void){return 0;}
+
+Determining if files pthread.h exist failed with the following output:
+Change Dir: C:/Users/Max/Dropbox/Programmering/DD2323/CgLab2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec891375560/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec891375560.dir\build.make CMakeFiles/cmTryCompileExec891375560.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Max/Dropbox/Programmering/DD2323/CgLab2/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec891375560.dir/CheckIncludeFiles.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec891375560.dir\CheckIncludeFiles.c.obj   -c C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c
+C:\Users\Max\Dropbox\Programmering\DD2323\CgLab2\CMakeFiles\CMakeTmp\CheckIncludeFiles.c:2:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTryCompileExec891375560.dir\build.make:56: recipe for target 'CMakeFiles/cmTryCompileExec891375560.dir/CheckIncludeFiles.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTryCompileExec891375560.dir/CheckIncludeFiles.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Max/Dropbox/Programmering/DD2323/CgLab2/CMakeFiles/CMakeTmp'
+Makefile:116: recipe for target 'cmTryCompileExec891375560/fast' failed
+mingw32-make.exe: *** [cmTryCompileExec891375560/fast] Error 2
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(void){return 0;}
+
+Determining if files pthread.h exist failed with the following output:
+Change Dir: C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTryCompileExec157121313.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2015-04-07 16:01:48.
+Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec157121313.dir\Debug\".
+  Creating directory "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec157121313.dir\Debug\cmTryCom.040D7AAD.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec157121313.dir\Debug\cmTryCom.040D7AAD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /W1 /WX- /O2 /Oy- /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec157121313.dir\Debug\\" /Fd"cmTryCompileExec157121313.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue  -g C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\CheckIncludeFiles.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /W1 /WX- /O2 /Oy- /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec157121313.dir\Debug\\" /Fd"cmTryCompileExec157121313.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue  -g C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\CheckIncludeFiles.c
+  
+cl : Command line warning D9002: ignoring unknown option '-g' [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj]
+  CheckIncludeFiles.c
+C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj]
+Done Building Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  cl : Command line warning D9002: ignoring unknown option '-g' [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj]
+
+
+"C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\CMakeTmp\cmTryCompileExec157121313.vcxproj]
+
+    1 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.27
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(void){return 0;}
+

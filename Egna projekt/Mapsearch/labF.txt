@@ -1,0 +1,26 @@
+Input: every packet enters this chain which enters the machine
+Forward: every packet which survived the input chain and is headed to another computer enters this chain
+Output: packets going out of the machine enters this chain
+
+Append: appends a rule to the specified chain. Used when rule order doesn't matter
+Insert: like append, but rule order can be specified
+Delete: deletes a rule in a particular chain by number
+List: lists all the rules in a specified chain, or in every chain
+Flush: flushes the chain, removing every rule in the chain, or from every chain.
+
+-p: matches a protocol, could be icmp, tcp, udp, or all
+-s: sets the source for a particular packet
+-d: sets the destination hostname, ip, or network of a packet that matches the rule. 
+-i: sets the incoming network interface, such as eth0 or ppp0. Only used with the input and forward chains.
+-o: sets the outgoing network interface for a rule, only used with output and forward chains.
+--sport: sets the source port of the packet. same syntax as --dport.
+--dport: sets the destination port for a packet. use a service name, a port number, or a range of port numbers.
+
+Accept: allows the packet to successfully move to its destination
+Drop: drops the packet without alerting the requester
+Reject: sends an error packet back to the requester and drops the packet
+Log: logs all packet that match this rule. Where these are logged can be specified.
+
+OSI layer 3: the network layer. protocols include ipv4/6, icmp, pisec, rip, etc. scan methods include icmp echo scanning. 
+OSI layer 4: transport layer. protocols include tcp, udp, sctp, etc. scan methods include tcp syn scanning, tcp fin scanning. 
+OSI layer 7: application layer. protocols such as telnet, ftp, smtp, dns, etc. scan methods include ftp bounce attack

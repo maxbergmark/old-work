@@ -1,0 +1,15 @@
+n=45000
+201792601 dead ends
+272117547 max stack size
+
+n=60000
+358713481 dead ends
+435283063 max stack size
+
+n=80000
+637711728 dead ends
+728836153 max stack size
+
+
+
+montage *.gif -geometry +0+0 -background none montage.gif

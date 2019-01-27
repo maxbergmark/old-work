@@ -1,0 +1,10 @@
+export PS1='\u@\h: '
+export PS1='> '
+export PS1='/\W$ '
+export PS1='\[\033[0;35m\]\h\[\033[0;33m\] \w\[\033[00m\]: '
+
+xrandr --fb 1600x1200 --output LVDS-0 --panning 1600x1200 --output VGA-0 --mode 1600x1200 --pos 0x0
+
+xrandr --output LVDS1 --scale 1x1.3333 --output VGA1 --pos 0x0 --mode 1600x1200
+
+xrandr --output LVDS-0 --mode 1600x900 --fb 1600x1200 --panning 1600x1200* --output VGA-0 --mode 1600x1200 --same-as LVDS-0

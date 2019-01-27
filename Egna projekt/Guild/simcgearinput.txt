@@ -1,0 +1,23 @@
+class=druid
+base_gear=base_gear.simc
+
+talents=3/2/2/3/2/3/3
+
+
+neck=,id=137487,enchant_id=5439,bonus_id=3416/1527/3337 name=strandofstars
+neck=,id=134498,enchant_id=5439,bonus_id=3510/1537/3337 name=mawsneck
+
+shoulder=,id=139206,enchant_id=5883,bonus_id=1806/1808/1502,gem_id=130220 name=otherworldly
+shoulder=,id=134154,bonus_id=3418/1808/1527/1813,gem_id=130220 name=steelgazer
+
+chest=,id=142432,bonus_id=3469/1512/3336 name=helbeast
+chest=,id=139207,bonus_id=1806/1502 name=grovekeeper
+
+
+finger=,id=134526,enchant_id=5428,bonus_id=3416/1808/1512/1813,gem_id=130220 name=gnawed
+finger=,id=139238,bonus_id=1806/1517/3337 name=twicewarped
+finger=,id=139237,enchant_id=5428,bonus_id=1806/1507/3336 name=dreadful
+
+trinket=,id=137419,bonus_id=3417/1512/1813 name=chronoshard
+trinket=,id=137349,bonus_id=3416/1808/1512/1813,gem_id=130220 name=naraxas
+trinket=,id=133642,bonus_id=3418/1532/3337 name=hornofvalor

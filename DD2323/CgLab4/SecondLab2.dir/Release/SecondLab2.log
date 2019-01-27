@@ -1,0 +1,17 @@
+﻿Build started 2015-04-07 16:15:09.
+     1>Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\SecondLab2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"c:\SDL-1.2.15\include" /IC:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm /nologo /W1 /WX- /O2 /Oy- /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"SecondLab2.dir\Release\\" /Fd"SecondLab2.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  -O3 C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\skeleton.cpp
+     1>cl : Command line warning D9002: ignoring unknown option '-O3'
+         skeleton.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+     1>C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\skeleton.cpp(215): warning C4273: 'round' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(516) : see previous definition of 'round'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\Release\SecondLab2.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SDL-1.2.15\lib\x86" SDL.lib SDLmain.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Release/SecondLab2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Release/libSecondLab2.dll.a" /MACHINE:X86 /SAFESEH SecondLab2.dir\Release\skeleton.obj
+         SecondLab2.vcxproj -> C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\Release\SecondLab2.exe
+     1>Done Building Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\SecondLab2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.04

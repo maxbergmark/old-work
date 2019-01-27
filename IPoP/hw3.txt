@@ -1,0 +1,95 @@
+* Homework 3
+** 1. Socket Interface (15 p)
+
+*** a) Is the sample code for a client or a server? Does it use TCP or UDP? Explain your answer. (5 p)
+
+	The sample code is for a TCP server. The server listens for incoming connections using accept(s, ...);. recv(t, ...); is used for TCP connections.
+
+
+*** b) The textbook gives two examples of communication using the socket interface: 1) connection-oriented, concurrent communication and 2) connectionless, iterative communication. Characterize the communication in the sample code using this terminology. (5 p)
+
+	This connection is connection-oriented, but iterative. Each request is processed by connecting the client to the server, processing the request, giving an answer and then closing the connection. A connectionless communication would not keep the client connected while processing the request. Concurrent communication would mean that several clients would be handled at once, which is not the case.
+
+*** c) In practice, this kind of communication is not frequently used. What is the main limitation? (5 p)
+
+	If too many clients connect at the same time, the server might be busy sending or receiving data from one client while another connects. If the listen queue gets full, new clients will not be able to connect.
+
+** 2. Multimedia Communication (25 p)
+
+
+*** a) What is the minimum size of the playback buffer in order to ensure smooth playback of the video stream at the receiver? (10 p)
+
+	10000 bytes/frame * 25 frames/second * (0.200 seconds) = 50kB.
+
+*** b) The video frames are encapsulated in RTP and then transmitted over UDP. What is the reason for using RTP on top of UDP? What does it provide, that UDP does not? (5 p)
+
+	RTP provides facilities for jitter compensations and detection for data arriving out of sequence. 
+
+*** c) Consider the statement “A TCP connection has large variations in delay because of its error control, flow control and congestion control mechanisms. Therefore, it cannot be used for multimedia communication.” Do you agree with the conclusion? Explain you answer. (5 p)
+
+	If quality is of utmost importance, using TCP with a large buffer might provide better quality than UDP with a smaller buffer. But for standard multimedia applications, UDP or RTP will provide a better experience.
+
+*** d) There are in fact compelling reasons for using TCP instead of UDP for multimedia communication. Give two such reasons. (5 p)
+
+	If the multimedia stream does not require real-time updates, TCP offers more reliable data without losses.
+
+	If many sources are sending multimedia data to a single server, TCP connections offer congestion control, and will keep the server from crashing. 
+
+
+** 3. Web (35 p)
+
+*** a) Which object does the browser request? Answer by giving its URL. (3 p)
+
+	https://www.opera.org/claypool
+
+*** b) Which version of HTTP is the browser using? What kind of connection is requested, persistent or non-persistent? (Note that the textbook does not cover header fields related to persistence, so you may want to consult other resources, on the Internet for example.) (4 p)
+
+	HTTP 1.1 (first line of first message)
+	Persistent connection (Connection: keep-alive)
+
+*** c) What kind of connection does the server accept, persistent or non-persistent? (3 p)
+
+	Persistent connection (Connection: keep-alive)
+
+*** d) Considering the kind of connection used, how long time does it take from that you click on the link until the entire page is loaded? The page consists of five embedded images, as separate objects. The round-trip delay to the server is 10 milliseconds. You have an ultrafast connection to the server, both your computer and the server are very powerful, so transfer time and processing time are neglectable. (Hint: study the header fields carefully.) (10 p)
+
+	If multiple connections are allowed, it takes 40ms. 20ms for SYN, SYN-ACK, ACK-REQUEST, ANSWER, and then 20ms for fetching 5 images on 5 parallel connections.
+
+	If multiple connections are not allowed, it takes 20ms to get the first request from the server. Then it takes 10ms each for 3 more pictures until the connection is closed, since max=4. Then the client must connect to the server again and request the last 2 images, which takes 20ms for the request and the fourth image, and 10ms for the last image. Total: (20+3*10+20+10)ms = 80ms.
+
+
+
+*** e) Can you tell whether the client has visited the web site before? Explain! (5 p)
+
+	There is a cookie, meaning that the server can check in it's cookie database if the client has visited before.
+
+*** f) There is a proxy server sitting between the client and the server. If the client soon after receiving the response sends another request for the same object, what would the proxy server do? (Hint: to answer this question you also need to study header fields that are not discussed in the textbook.) (10 p)
+
+	The proxy server will save the Etag from the first request, and cache the website. When the client request the website again, the proxy server must only send the Etag to the server along with a request. If no changes have been made to the website, the server must only inform the proxy server of that, rather than sending the entire website back. The no-cache means that the client and the proxy server must not use a cached version of the webpage without validating that it is updated.
+
+** 4. DHCP (25 p)
+
+
+*** a) Why can’t the client use the IP address offered in the DHCP OFFER as source address when it sends the DHCP REQUEST back to the server? (10 p)
+
+	Because the client has not received confirmation from the DHCP server that it is okay to use the address.
+
+	When sending DHCP discover, several DHCP servers might reply with different IP addresses, meaning that the client does not have a unique IP address until it makes a DHCP request to one of the DHCP servers.
+
+*** b) When (at what point in the message sequence above) can the client start using the IP address offered by the server? (5 p)
+
+	Not until it receives the DHCP ACK from the DHCP server.
+
+*** c) Why is the DHCP REQUEST sent to the limited broadcast address instead of directly to the DHCP server? (5 p)
+
+	In case there are multiple DHCP servers which have made a DHCP offer, they must all be informed of the fact that the client has chosen a DHCP server, and that the other servers do not have to reserve an address for the client. Thus, the DHCP request is sent on limited broadcast, and should include the server address in the message, which it does not in the example.
+
+*** d) Why is the DCHP client using a well-known port number instead of a random port number (which is the normal way a client would select its own port)? (5 p)
+
+	Since the messages are broadcasted to many addresses, it is better to use a fix port on the client side. Otherwise, other clients might accept the message into their applications that happen to listen on the same random port. 
+
+	Using port 67 and 68 are specified in RFC 2131.
+
+
+
+

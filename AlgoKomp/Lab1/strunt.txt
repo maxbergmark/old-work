@@ -1,0 +1,36 @@
+function getPath(tree):
+    if (tree.path < 0):
+        return
+    return tree.path + getPath(childs[tree.path])
+
+funcion createTree(C,i):
+
+    root = F_i
+    root.depth = 1
+    root.path = -1
+    root.childs = []
+    for j in range(N):
+        if (C[i][j] == 1):
+            child = createTree(C,j)
+            root.childs[j] = child
+            if (child.depth+1 > depth):
+                depth = child.depth+1
+                path = j
+    return root
+
+function getMaxK(C):
+    create an array of trees -> T
+    max_depth = 0
+    max_tree = 0
+    for i in range(N):
+        T[i] = createTree(C,i)
+        if (T[i].depth > max_depth);
+            max_depth = T[i].depth
+            max_tree = i
+            
+    getPath(T[max_tree])
+    
+
+This function creates a tree for every figure. The tree is recursively defined. The children of a figure are the figures which can be covered by it. By creating all of these trees, all possible coverings chains are discovered, as every path in a tree is a covering chain. 
+
+When all trees have been created, the deepest tree will contain the longest chain. Thus, the algorithm checks which tree is the deepest, and gets the path. Since no chain is longer than n, no tree is deeper than n. The number of nodes in each level of the tree is 

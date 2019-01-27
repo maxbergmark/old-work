@@ -1,0 +1,36 @@
+druid
+
+trinket=,id=139321,bonus_id=1807/1482/3336 name=swarming_plaguehive
+trinket=,id=137306,bonus_id=3410/1512/3337 name=oakhearts_gnarled_root
+trinket=,id=139323,bonus_id=1805/1492/3336 name=twisting_wind
+trinket=,id=137485,bonus_id=3411/1502/3336 name=infernal_writ
+trinket=,id=137349,bonus_id=1727/1492/1813 name=naraxas_spiked_tongue
+trinket=,id=137398,bonus_id=1727/1492/1813 name=portable_manacracker
+
+finger=,id=134533,enchant_id=5424,bonus_id=3410/1497/1813 name=looming_menace
+finger=,id=134489,enchant_id=5428,bonus_id=3412/1512/3336 name=malicious_deceit
+finger=,id=134539,bonus_id=3417/1517/3336 name=braided_silver_ring
+finger=,id=134537,bonus_id=1727/1507/3337 name=highborne_magi
+
+//override=gear_haste_rating=10000
+//override=gear_crit_rating=0
+
+talents=123/2/2/3/123/123/123
+
+
+mage
+
+//finger=,id=133679,enchant_id=5423,bonus_id=1727/1497/3336 name=basering1
+//finger=,id=134524,enchant_id=5423,bonus_id=1727/1492/1813 name=basering2
+//finger=,id=133634,enchant_id=5423,bonus_id=1727/1492/1813 name=extraring1
+//finger=,id=134527,enchant_id=5423,bonus_id=1726/1808/1477 name=extraring2
+//neck=,id=134499,enchant_id=5439,bonus_id=1727/1808/1502/3336,gem_id=130215 name=baseneck
+//neck=,id=137311,enchant_id=5439,bonus_id=1727/1492/1813 name=extraneck1
+//neck=,id=134492,enchant_id=5439,bonus_id=1727/1492/1813 name=extraneck2
+//trinket=,id=121311,bonus_id=3397/605/1502/3336 name=basetrinket1
+//trinket=,id=133641,bonus_id=1726/1482/3339 name=basetrinket2
+//trinket=,id=133596 name=heirloom
+//trinket=,id=139076,bonus_id=3397/1808/605/1492/1675 name=extratrinket1
+override=gear_crit_rating=10000
+
+talents=123/1/2/23/1/12/12

@@ -1,0 +1,80 @@
+1. How many valid Host IP addresses belong to the subnet 172.16.128.0/18?
+
+	2^14-2 = 16384-2 = 16382
+
+	255.255.192.0 in dotted decimal.
+
+2. What is ARP and why is it needed?
+
+	ARP is used to establish a lookup table between network addresses and MAC addresses.
+
+	Packets are sent to a physical unit, and the network must know where to find the unit. If a computer is moved and its IP changes, the network must still be able to send data to the correct MAC-address.
+
+
+3. Explain the role of the port numbers in the transport layer.
+
+	The different ports are used by different applications on the computer. When a package comes in, the program which has reserved the port on which the data comes in will receive the data.
+
+
+4. Write the ttcp commands for both sender and receiver, which executes the following
+scenario: Send a TCP stream from host 10.2.3.4 to 10.4.5.6 on port 3333. The sender
+should send 4000 bytes with four datagrams of 1000 bytes in each datagram.
+
+
+	Sender:
+	ttcp -t -l 1000 -n4 -p 3333 10.4.5.6
+
+	Receiver:
+	ttcp -r -l 1000 -n4 -p 3333
+
+5. Suppose a TCP sender receives an ACK packet in which the acknowledgement number
+is set to 12345 and the window size is 2048. Which sequence numbers can the sender
+transmit?
+
+	The sender can transmit 2048 bytes, starting with byte number 12345. This results in the sequence 12345-14392.
+
+
+6. Briefly describe the following algorithms and when they are used:
+
+• Nagle’s algorithm.
+
+	As long as no acknowledgement has been received, pile up the data to be sent and send as one packet.
+
+• Karn’s algorithm.
+
+	Ignore the calculation of the RTT if the packet was retransmitted, calculate RTT only if the packet was transmitted once.
+
+• Delayed acknowledgement.
+
+	Delay sending an acknowledgement for a amount of time, or until two acknowledgements has ackumulated. This saves network usage, but can reduce performance.
+
+
+• Piggybacked acknowledgement.
+
+	Instead of sending an acknowledgement as its own packet, attach it to a data packet and send both at the same time.
+
+
+
+7. How is the retransmission timeout (RTO) value computed in TCP?
+
+		First a measurement R is made, and a heartbeat granularity G is chosen. SRTT is set to R, RTTVAR is set to R/2, and RTO is set to SRTT + max(G, k*RTTVAR).
+
+		After a new measurement R', RTTVAR is set to (1-b)*RTTVAR+b*|SRTT-R'|
+		SRTT is set to (1-a)*SRTT + a*R'
+
+		a and b are values between 0 and 1. 
+
+
+8. Explain the following TCP mechanisms:
+
+• Sliding window flow control.
+
+	The use of synchronized sending and receiving windows for the data, to control which packets to send to transmit the datagram as fast as possible.
+
+• Slow start and congestion avoidance.
+
+	Slow start starts by sending small packets, then doubles the allowed number of sent packets without acknowledgement until a treshold is reached. Congestion avoidance reduces the packet size if the acknowledgement for a packet is not received within RTO. 
+
+• Fast retransmit and fast recovery.
+
+	Is useful when a few packets are lost. The senders waits for three duplicate acknowledgements before resending the data which was lost, and keeps sending data while waiting for the duplicates.

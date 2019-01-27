@@ -1,0 +1,3 @@
+Render time: 1567 ms.
+Render time: 1549 ms.
+Render time: 1567 ms.

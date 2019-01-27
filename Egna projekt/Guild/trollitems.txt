@@ -1,0 +1,31 @@
+/script print("\124cff0070dd\124Hitem:140030:5439:130220:130220:130220::::110::::2:1806:1552:\124h[Devilsaur Shock-Baton]\124h\124r");
+
+/script print("\124Hitem:141585:5439:130220::::::110::::2:1552:1806:\124h[Six-Feather Fan]\124h");
+
+/script print("\124Hitem:139323:5439:130247:130247:130247::::110::::2:1806:1552:\124h[Twisting Wind]\124h");
+
+/script print("\124Hitem:140809::130247::::::110::::2:1552:1806:\124h[Whispers in the Dark]\124h");
+
+/script print("\124Hitem:50818:5439:130247:130247:130247::::110::::2:3337:1806:\124h[Invincible]\124h");
+
+/script print("\124Hitem:133571:5439:130247:130247:130247::::110::::2:3337:1806:\124h[Salad]\124h");
+
+/script print("\124Hitem:137092::::::::110::::2:1552:1811:\124h[Legendary]\124h");
+
+/script print("\124Hitem:130220::130220:130220:130220::::110::::2:3337:1806:\124h[Gem]\124h");
+
+/script print("\124Hitem:140809::::::::110::::2:1512:3444:\124h[Whispers in the Dark]\124h");
+
+/script print("\124Hitem:142516::::::::110::::2:1552:3444:\124h[Whispers in the Dark]\124h");
+
+/script print("\124Hachievement:11398:Player-1300-08CB4429:1:11:25:16:0:0:0:0\124h[Many Whelps! Handle It! (25 player)]\124h")
+
+dragons life relic (wf chance)
+nythendra life relic (wf chance)
+nythendra trinket
+ilgynoth hands (wf chance)
+ilgynoth ring
+odyn arcane relic
+odyn back
+odyn ring
+guarm chest

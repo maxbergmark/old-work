@@ -1,0 +1,87 @@
+function(event,t,type,hC,sG,sN,...)
+    if sN==UnitName('player') then
+        if type == 'SPELL_PERIODIC_DAMAGE' then
+            local spell = select(8,...)
+            if spell == 'Combustion' then
+                local damage = select(10,...)
+                local ok = select(11,...)
+                local dN = select(4,...)
+                local dGUID = select(5,...)
+                aura_env.targets = aura_env.targets or {}
+                local currTime = GetTime()
+                aura_env.targets[dGUID] = GetTime()
+                for key,value in pairs(aura_env.targets) do
+                    if currTime-value > 1.5 then
+                        aura_env.targets[key] = nil
+                    end
+                    
+                end
+                
+                
+                
+                
+                
+                if dN ~= 'Prismatic Crystal' then
+                    --print(damage .. '   ' .. dN)
+                    aura_env.lasttick = aura_env.lasttick or 0
+                    aura_env.damage = aura_env.damage or 0
+                    if GetTime() - aura_env.lasttick > 30 then
+                        aura_env.damage = 0
+                    end
+                    aura_env.damage=aura_env.damage+damage-ok
+                    aura_env.lasttick = GetTime()
+                    return true
+                end 
+            end
+        end
+    end
+    return false
+end
+
+
+
+SBG
+Auch
+Ever
+UBRS
+Docks
+
+Skyreach
+Grimrail
+BSM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+clc
+q = [.4 .4 .2; 0 .7 .3; 0 .1 .9];
+pi = [0 .25 .75];
+k = 1000;
+y = 1;
+
+for i = 1:k
+    y_star = randi(3);
+    u = rand;
+    alpha = min(1, pi(y_star)*q(y_star, y) / (pi(y)*) )
+    
+    
+    
+    
+end

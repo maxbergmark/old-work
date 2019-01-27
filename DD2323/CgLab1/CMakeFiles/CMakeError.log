@@ -1,0 +1,26 @@
+Determining if files pthread.h exist failed with the following output:
+Change Dir: C:/Users/Max/Dropbox/Programmering/DD2323/CgLab1/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1750011309/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1750011309.dir\build.make CMakeFiles/cmTryCompileExec1750011309.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Max/Dropbox/Programmering/DD2323/CgLab1/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Max\Dropbox\Programmering\DD2323\CgLab1\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1750011309.dir/CheckIncludeFiles.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec1750011309.dir\CheckIncludeFiles.c.obj   -c C:\Users\Max\Dropbox\Programmering\DD2323\CgLab1\CMakeFiles\CMakeTmp\CheckIncludeFiles.c
+C:\Users\Max\Dropbox\Programmering\DD2323\CgLab1\CMakeFiles\CMakeTmp\CheckIncludeFiles.c:2:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTryCompileExec1750011309.dir\build.make:56: recipe for target 'CMakeFiles/cmTryCompileExec1750011309.dir/CheckIncludeFiles.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTryCompileExec1750011309.dir/CheckIncludeFiles.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Max/Dropbox/Programmering/DD2323/CgLab1/CMakeFiles/CMakeTmp'
+Makefile:116: recipe for target 'cmTryCompileExec1750011309/fast' failed
+mingw32-make.exe: *** [cmTryCompileExec1750011309/fast] Error 2
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(void){return 0;}
+

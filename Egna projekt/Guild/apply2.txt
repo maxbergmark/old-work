@@ -1,0 +1,180 @@
+[size=20][color=#ffcc33]Personal Information[/color][/size]
+
+[b]1. What is your name?[/b]
+
+Khrubby of Azeroth
+(Also known as Max by some IRL people)
+
+[b]2. Where do you come from?[/b]
+
+Stockholm, Sweden
+
+[b]3. How old are you?[/b]
+
+22 years old
+
+[b]4. How would you describe yourself in 3 words?[/b]
+
+Focused, determined, and performance-driven.
+
+
+[size=20][color=#ffcc33]Background Information[/color][/size]
+
+[b]1. Add here your Battle Tag please.[/b]
+
+cremefraiche#2243
+
+[b]2. List your guild history.[/b]
+
+Seventh Legacy-Darksorrow (maybe shouldn't include this, we were complete shit)
+Stress Management-Darksorrow (current guild)
+
+[b]3. What is your raiding experience?[/b]
+
+In TBC I raided a bit, killed Gruul, did som Karazhan, some Zul'Aman, nothing fancy.
+In WotLK, I pugged Onyxia, ToC, VoA, Ulduar (a few bosses), nothing special there.
+After a 4 year break, I started playing again in WoD.
+Our guild got 4/10M before we had to take a break due to lack of people.
+In the current tier we have 11/13M, and have gotten Mannoroth to 40%.
+
+[b]4. Why are you leaving your current(last) guild?[/b]
+
+Lack of skill and determination in the rest of the raid team. I'm looking for a guild who wants to progress Mythic in Legion and actually aim towards a high rank.
+
+[b]5. Why would you like to to join Aggressive Authority?[/b]
+
+After looking through WoWProgress, you seem like the best choice. Your raiding schedule fits me really well, and from what I see your mindset seems to be the same as mine. Even if I haven't got 10 years of raiding experience, I know how to play my class, I know how to perform during progression and I know how not to stand in fire. It would be nice to play with 19 other people who share that knowledge.
+
+[b]6. Do you know anyone in the guild?[/b]
+
+I know all the officers (wink wink)
+
+
+[size=20][color=#ffcc33]General Character Information[/color][/size]
+
+[b]1. Name[/b]
+
+Khrubby
+
+[b]2. Class[/b]
+
+Druid
+
+[b]3. Main-spec[/b]
+
+Boomking
+
+[b]4. Off-spec[/b]
+
+Resto (have played resto during progression aswell)
+
+[b]5. Armory link[/b]
+
+http://eu.battle.net/wow/en/character/darksorrow/Khrubby/advanced
+
+[b]6. Logs (Provide your most recent logs)[/b]
+
+https://www.warcraftlogs.com/rankings/character/7578965/latest/#boss=0
+The only logs I'm not really satisfied with at the moment are Gorefiend and Xhul'horac, because apparently, the rest of my raid team don't know how to kill adds. 
+
+[b]7. Raid UI Screenshot (Must be taken during combat in a raid environment)[/b]
+
+http://imgur.com/QEO5GVF (don't hate on the default Blizzard bars, I like them)
+A lot of things in my UI are hard to capture, since my philosophy is that if there isn't a problem, nothing should be shown)
+
+I've come to like LUA coding lately, and I have produced a few weakauras/macros utilizing this.
+
+[size=20][color=#ffcc33]Class Knowledge[/color][/size]
+
+[b]1. Explain the fundamental idea behind your rotation/priority system for both ST and AoE.[/b]
+
+For AoE, it's basically just equip SoC and multidot, and then single target rotation on priority targets.
+I always try to cheeze my Sunfires to spread them to as many targets as possible. 
+
+For single target, I usually go with DSI and Sandman's Pouch (or DSI/loom trinket for demons). I could go on about how the eclipse meter works, and what threshold values are important (30-40 for lunar, 40-60 for solar) but that's really basic, and I should be expected to know that. 
+
+For my opener I always go incarnation->pot->surge->CA->dots->starfire x2->(the rest of the fight) and no refresh of dots in CA. I only change that opener for certain bosses where Time Warp is delayed (Gorefiend, Iskar, Xhul). For those bosses I open with a simple pot->surge->moonfire->starfire->(the rest of the fight).
+
+For single target, I stack a bit more crit than I do for AoE, but with the gear that I currently have, it's only the trinkets that I change. Since haste is better for AoE, I might use Spur of the Great Devourer for single target and Warhammer of Arrogance for AoE. 
+
+[b]2. Explain your general talent and glyph choice, point-out using specific talents and glyphs for some fights in the current raid tier if relevant.[/b]
+
+As boomkin:
+
+Glyphs:
+
+[list]
+[*]Glyph of Stampeding Roar: Good raid utility, useful on practically every boss
+[*]Glyph of Moonwarding: Useful on fights with magic damage (practically every fight)
+[*]Glyph of the Shapemender: Minor improvement, better than having no glyph there
+
+[*]Glyph of Untamed Stars: A must-have, I need to ninja pull all trash in every raid
+[*]Glyph of Stars: Basically responsible for 60% of my dps
+[*]Glyph of Grace: Really useful in a raid environment (no one believes me)
+[/list]
+   The glyph choices aren't really set in stone for a boomkin, since there's no DPS increase from any glyph.
+
+   Talents:
+[list]
+[*]Displacer Beast: Has saved my ass on more than one occasion
+[*]Typhoon/Ursol's Vortex: My special little mass grip (useful in a lot of situations)
+[*]Incarnation: Because bursting is fun (the other choices have lower DPS)
+[*]Euphoria: I've never tried anything else, and based on my simulations, I never will.
+[/list]
+
+As resto:
+
+   Glyphs:
+[list]
+[*]Glyph of Stampeding Roar: Same as above
+[*]Glyph of Regrowth: Good quick heal
+[*]Glyph of Wild Growth: works well with SotF
+
+[*]Glyph of the Sprouting Mushroom: Makes my life simpler
+[/list]
+
+   Talents:
+
+[list]
+[*]Soul of the Forest: Increased overall healing, sometimes I'll go Incarnation if needed
+[*]Heart of the Wild: Really useful towards the end of fights, where extra healing output is vital.
+[*]Germination: See Euphoria for answer
+[/list]
+
+[b]3. Pick one or more fights from the current raid tier that you believe your class is best at and explain why.[/b]
+
+If I said any fight other than Council I'd be lying. There isn't any fight where boomkin is the very best class, but at least it's top 5 on Council, and I'm able to output quite high sustained DPS throughout the fight. Being able to multidot and having Starfall on all targets really boosts my DPS.
+
+[b]4. Is there a fight in the current raid tier you would consider disadvantageous to your class?[/b]
+
+I'd have to say Xhul and Mannoroth. Both fights have waves of imps that are just impossible to get any good damage on. If I have Starfall and Sunfire on the imps, there's nothing more that I can do except single target one of them or use Hurricane (god forbid). Thus, I'll just go pure single target on prio targets and multidot.
+
+[b]5. List addons that you use for raiding.[/b]
+
+TellMeWhen
+WeakAuras
+DBM
+Exorsus Raid Tools
+Vuhdo
+Skada
+RC Lootcouncil
+
+
+[b]6. What sources do you use for theorycrafting and how do you keep yourself updated?[/b]
+
+Sometimes I try to sift through the Balance thread on MMO champion, where I'm quite sure that 95% of people posting haven't actually entered HFC. 
+
+When I'm not busy doing that, I prefer to do my own theorycrafting, with simulations, calculations and discussions with other boomkins/experienced raiders.
+
+[size=20][color=#ffcc33]Extra Information[/color][/size]
+
+[b]1. Link the test results for your connection.[/b] http://www.speedtest.net/
+
+http://www.speedtest.net/my-result/5066998265 (might upgrade to 100/100, haven't decided)
+
+[b]2. Do you ever experience disconnects or lag issues when you play WoW?[/b]
+
+Lately my ISP has been shittier than usual. For 3 years I didn't have a single disconnect, and last month I have experienced some. However, it hasn't affected my raiding. If it's needed, I'll use my phone's network to raid, I get a stable 60-80ms there usually, have tested raiding on it before.
+
+[b]3. You can add here any relevant information that you think might help with your application.[/b]
+

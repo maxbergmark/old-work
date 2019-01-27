@@ -1,0 +1,282 @@
+
+
+
+
+1
+
+
+a) Provide the state of the five ARP caches as they will appear after the IPv4 unicast
+datagram has been delivered to host H2, that is, after dynamic ARP resolution has been
+made (16p). 
+
+Först skickas en ARP-request från H3 till H4 och R1. Sedan svarar R1 endast till H3. 
+
+Sedan skickas paketet från H3 till R1. 
+
+Sedan skickas en ARP-request från R1 till H1 och H2. H2 svarar endast till R1.
+
+Sedan skickas paketet från R1 till H2.
+
+|H1		|H2		|H3		|H4		|R1		|	
+|-------+-------+-------+-------+-------|
+|A->a	|A->a	|B->b	|E->e	|E->e	|
+|		|		|		|		|D->d	|
+
+
+
+b) Provide the state of the bridge B1's MAC address table as it will appear after the IPv4
+unicast datagram has been delivered to host H2, that is, after dynamic ARP resolution has
+been made. (4p)
+
+|B1		|
+|-------|
+|E->a	|
+|S->d	|
+
+
+
+2. UDP and fragmentation (15/100)
+
+Assume an Ethernet link with MTU 1500 bytes connects hosts A and B. An application
+process on Host A sends 7400 bytes of application data via UDP to a process on Host B. IPv4
+is used at the network layer.
+
+
+a) How many fragments are transmitted? (5p)
+
+The UDP header consists of four 2-byte segments, total 8 bytes, which are added to the total datagram length (7408 bytes).
+
+The IP header added to each fragment is between 20 and 60 bytes, meaning that the data sent is between 1440 and 1480 bytes.
+
+7408/1480=5.005, 7408/1440=5.14. There must be 6 fragments to sent the data.
+
+
+
+b) Give the values of the MF bit, the offset and the total length field of the IP header of each
+fragment! (10p)
+
+
+|Fragment	|MS bit	|Offset	|Total	|
+|-----------+-------+-------+-------|
+|1			|1		|0		|1500	|
+|2			|1		|180-185|1500	|
+|3			|1		|360-370|1500	|
+|4			|1		|540-555|1500	|
+|5			|1		|720-740|1500	|
+|6			|0		|900-925|28-228	|
+
+
+
+
+3
+
+
+a) What is the initial routing state of D? (3p)
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.2.0/24	|1			|-			|
+|208.218.4.0/24	|1			|-			|
+
+b) Assume that router E starts by sending a RIP response to its neighbours. What is the
+routing state of D after it has received the initial distance-vector from E? (5p)
+
+
+Initial state of E:
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.2.0/24	|1			|-			|
+|208.218.4.0/24	|1			|-			|
+|208.218.5.0/24	|1			|-			|
+
+
+Final state of D:
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.2.0/24	|1			|-			|
+|208.218.4.0/24	|1			|-			|
+|208.218.5.0/24	|2			|208.218.4.2|
+|208.218.5.0/24	|2			|208.218.2.3|
+|208.218.4.0/24	|2			|208.218.2.3|		
+|208.218.4.0/24	|2			|208.218.4.2|
+
+
+
+c) Assume that the second event that happens in the network is that router A sends RIP
+responses to its neighbours. Which RIP response messages does A send, and which
+distance-vectors do they contain? You should indicate source and destination address of
+each RIP message, on which interface they are sent out (and to where) and which
+distance-vector (destination, metric tuples) are contained in each message. (8p) 
+
+
+A state after RIP response from E:
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.1.0/24	|1			|-			|
+|208.218.2.0/24	|1			|-			|
+|208.218.5.0/24	|2			|208.218.2.3| (comes from 208.218.2.0/24)
+|208.218.4.0/24	|2			|208.218.2.3| (comes from 208.218.2.0/24)
+
+208.218.1.1 to 208.218.1.255:
+
+|Destination	|Metric		|
+|---------------+-----------|
+|208.218.2.0/24	|1			|
+|208.218.5.0/24	|2			|
+|208.218.4.0/24	|2			|
+
+
+
+208.218.2.1 to 208.218.2.255:
+
+|Destination	|Metric		|
+|---------------+-----------|
+|208.218.1.0/24	|1			|
+
+
+
+
+
+d) What are the routing states of D and E after they have received the distance-vector from A
+in the previous step (c)? (9p)
+
+State of D before:
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.2.0/24	|1			|-			|
+|208.218.4.0/24	|1			|-			|
+|208.218.5.0/24	|2			|208.218.4.2|
+|208.218.5.0/24	|2			|208.218.2.3|
+|208.218.4.0/24	|2			|208.218.2.0|
+|208.218.4.0/24	|2			|208.218.4.2|
+
+
+State of D after:
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.2.0/24	|1			|-			|
+|208.218.4.0/24	|1			|-			|
+|208.218.5.0/24	|2			|208.218.4.2|
+|208.218.5.0/24	|2			|208.218.2.3|
+|208.218.1.0/24	|2			|208.218.2.1|
+|208.218.4.0/24	|2			|208.218.2.0|
+|208.218.4.0/24	|2			|208.218.4.2|
+
+
+State of E before:
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.2.0/24	|1			|-			|
+|208.218.4.0/24	|1			|-			|
+|208.218.5.0/24	|1			|-			|
+
+
+State of E after:
+
+|Destination	|Metric		|Next Hop	|
+|---------------+-----------+-----------|
+|208.218.2.0/24	|1			|-			|
+|208.218.4.0/24	|1			|-			|
+|208.218.5.0/24	|1			|-			|
+|208.218.1.0/24	|2			|208.218.2.1|
+
+
+
+
+4. IXMP (15/100)
+
+The two hosts H1, H2 and H3 are connected by a network running IPv4. The forwarding
+tables of all hosts and connecting routers are correctly configured. Note that the letters A-C do
+not denote addresses.
+
+
+a) H1 wants to use ping to verify that H2 is reachable. Which type of ICMP messages are
+exchanged between the two hosts? (5p)
+
+H1 sends an "Echo" request, type 8.
+H2 responds with an "Echo Reply" response, type 0.
+
+b) Assume H1 performs a traceroute to host H3 relying on ICMP. Which ICMP
+messages does H1 send? List the packets including their destination address, the fields
+that differ between the subsequent packets, and the ICMP message type! What
+messages does H1 receive and from whom? List the received packets, assign each
+received packet to a sent packet and show its source address and the ICMP message
+type! (10p)
+
+Sent:
+
+|Packet #	|Destination address|TTL	|Type 	|
+|-----------+-------------------+-------+-------|
+|1			|90.59.5.2			|1		|8		|
+|2			|90.59.5.2			|2		|8		|
+|3			|90.59.5.2			|3		|8		|
+|4			|90.59.5.2			|4		|8		|
+
+Received:
+
+|Packet #	|Source address	|TTL	|Type 	|
+|-----------+---------------+-------+-------|
+|1			|90.59.1.1		|		|11		|
+|2			|90.59.2.2		|		|11		|
+|3			|90.59.4.2		|		|11		|
+|4			|90.59.5.2		|		|0		|
+
+
+
+5
+
+
+a) What is the MSS used by TCP? (2p)
+
+MTU-40 bytes = 1000 bytes
+
+
+b) What is the bandwidth-delay product of the communication channel? Is the advertised
+receiver window of B big enough? If not, how big should it be for A to be able to fully
+utilize the channel? (5p)
+
+The bandwidth-delay product:
+
+Bandwidth*RTT = 4000000 bits/second * (100ms+100ms+1ms) = 100500 bytes.
+
+The receiver will wait 2ms extra before sending the first ACK, beause it waits for the second packet before sending. Therefore, the receiver window should be:
+
+4000000 bits/s * (100ms+100ms+1ms+2ms) = 101500 bytes.
+
+c) Provide the sequence of segments sent by TCP from host A. For each segment sent
+from host A provide the time it is sent, and the sequence number of the first byte it
+contains. For the first four segments sent from host A also provide the SRTT, RTTVAR
+and the RTO values of the sender TCP at the time the segment is sent. Assume that
+outgoing segments are handled before incoming segments in case more than one event
+happens at the same time! (15p)
+
+
+0ms: Generate first segment
+1ms: A sends first segment (0)
+101ms: B receives (0)
+301ms: B generates ACK (1000)
+302ms: B sends ACK (1000)
+402ms: A receives ACK (1000)
+
+Measured time: 401ms
+SRTT = 401ms
+RTTVAR = R/2 = 200ms
+RTO = SRTT + max(G, 4*RTTVAR) = 1201ms
+
+403ms: A sends second segment (1000)
+405ms: A sends third segment (2000)
+507ms: B receives final bytes of (2000)
+508ms: B sends ACK (3000)
+608ms: A receives ACK (3000)
+
+Measured RTT: 
+R' = 203ms
+SRTT = .9*SRTT + .1*R' = 381ms
+RTTVAR = .9*RTTVAR + .1*|SRTT-R'| = 200ms
+RTO = SRTT + max(G, 4*RTTVAR) = 1181ms

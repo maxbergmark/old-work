@@ -1,0 +1,50 @@
+﻿Build started 2015-04-07 16:03:29.
+     1>Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\SecondLab2.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Ic:\MinGW\include\SDL /IC:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm /nologo /W1 /WX- /O2 /Oy- /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"SecondLab2.dir\Debug\\" /Fd"SecondLab2.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  -g C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\skeleton.cpp
+     1>cl : Command line warning D9002: ignoring unknown option '-g'
+         skeleton.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+     1>C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\skeleton.cpp(213): warning C4273: 'round' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(516) : see previous definition of 'round'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\Debug\SecondLab2.exe" /INCREMENTAL /NOLOGO "-lkernel32" "-luser32" "-lgdi32" "-lwinspool" "-lshell32" "-lole32" "-loleaut32" "-luuid" "-lcomdlg32" "-ladvapi32" "-lmingw32" "-Wl,-Bstatic" "-lSDLmain" "-Wl,-Bdynamic" "-lSDL" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Debug/SecondLab2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Debug/libSecondLab2.dll.a" /MACHINE:X86 /SAFESEH SecondLab2.dir\Debug\skeleton.obj
+     1>LINK : warning LNK4044: unrecognized option '/lkernel32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/luser32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lgdi32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lwinspool'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lshell32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lole32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/loleaut32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/luuid'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lcomdlg32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/ladvapi32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lmingw32'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/Wl,-Bstatic'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lSDLmain'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/Wl,-Bdynamic'; ignored
+     1>LINK : warning LNK4044: unrecognized option '/lSDL'; ignored
+            Creating library C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Debug/libSecondLab2.dll.a and object C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Debug/libSecondLab2.dll.exp
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_GetError referenced in function "struct SDL_Surface * __cdecl InitializeSDL(int,int,bool)" (?InitializeSDL@@YAPAUSDL_Surface@@HH_N@Z)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_RWFromFile referenced in function _SDL_main
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_GetKeyState referenced in function "void __cdecl Update(void)" (?Update@@YAXXZ)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_SetVideoMode referenced in function "struct SDL_Surface * __cdecl InitializeSDL(int,int,bool)" (?InitializeSDL@@YAPAUSDL_Surface@@HH_N@Z)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_UpdateRect referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_MapRGB referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_LockSurface referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_UnlockSurface referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_SaveBMP_RW referenced in function _SDL_main
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_PollEvent referenced in function "bool __cdecl NoQuitMessageSDL(void)" (?NoQuitMessageSDL@@YA_NXZ)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_GetTicks referenced in function "void __cdecl Update(void)" (?Update@@YAXXZ)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_Init referenced in function "struct SDL_Surface * __cdecl InitializeSDL(int,int,bool)" (?InitializeSDL@@YAPAUSDL_Surface@@HH_N@Z)
+     1>skeleton.obj : error LNK2019: unresolved external symbol _SDL_Quit referenced in function "struct SDL_Surface * __cdecl InitializeSDL(int,int,bool)" (?InitializeSDL@@YAPAUSDL_Surface@@HH_N@Z)
+     1>MSVCRT.lib(crtexe.obj) : error LNK2019: unresolved external symbol _main referenced in function ___tmainCRTStartup
+     1>C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\Debug\SecondLab2.exe : fatal error LNK1120: 14 unresolved externals
+     1>Done Building Project "C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\SecondLab2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.14

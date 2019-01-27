@@ -1,0 +1,265 @@
+Nythendra
+
+	stå inte bakom (svans)
+
+	infested breath: targetar random healer/dps.
+
+	infested ground: stå inte i.
+
+	rot: 9 sekunder debuff, 10 yard spread, unfested ground när den går ut.
+
+	volatile rot: som iron reaver (för tanks)
+
+	infested: stackar upp varje gång man blir träffad av något. går aldrig ut.
+
+	insekter: akta och döda.
+
+
+
+Il'gynoth
+
+	döda adds -> blob fixerar på spelare -> blob exploderar på öga -> öga dör -> dps på boss
+
+	nightmare gaze: hoppar från spelare till spelare om nära.
+
+	spew corruption: spawnar fläckar varannan sekund, flytta med den.
+
+	nightmare explosion: akta från blobs när de exploderar.
+
+	cursed blood: sprid ut inne vid bossen.
+
+	dark reconstitution: spring ut innan klart, oneshot annars.
+
+
+
+Elerethe
+
+	vile ambush: spring långt ifrån. spawnar adds, dödas snabbt.
+
+	nectoric venom: spring ifrån andra spelare. 
+
+	gathering clouds: pushback, spara AP till denna ability.
+
+	byter plattform, ticking damage under tiden. akta för tornados. kanske ta fjädrar.
+
+	twisting shadows: spawnar tornados, spring ut.
+
+	razor wing: stå bakom bossen när det händer.
+
+
+
+Ursoc
+
+	focused gaze: charge efter 6 sekunder, stå långt ifrån om jag är target. hälften stackar.
+
+	roaring cacophony: splittad damage. fearar också.
+
+
+
+Dragons of Nightmare
+
+	slåss mot 3 drakar, finns 4 totalt
+
+	först ysondre + en annan drake.
+
+	70%/40% byter drake
+
+	corrupted breath: stå inte i
+
+	mark of the nightmare: flytta mellan drakarna, få inte 10 stacks.
+
+	ysondre:
+
+		call defiled spirit: lila cirkel, rootar de i cirkeln. flytta ur.
+
+		nightmare blast: lila boll mot en spelare. spelare blir knockad, och spawnar en blomma. stå i blomman.
+
+
+	taerar:
+
+		shades of taerar: AoE damage, döda båda.
+
+		seeping fog: stå inte i fog, sleepar i 6 sekunder.
+
+		bellowing roar: fearar hela raiden periodvis när taerar är i luften.
+
+	emeriss:
+
+		volatile infection: 1.5 min debuff, ticking damage för alla runt.
+
+		essence of corruption: spawnar adds som gör raid wide damge. interrupta.
+
+		corruption of the dream: alla fiender spawnar en svamp när de dör. bara när emeriss flyger. akta för svampen.
+
+	lethon:
+
+		gloom: stå inte i meteoren.
+
+		siphon spirit: drar ut souls ur spelare, döda dessa snabbt.
+
+		shadow burst: spreadar en debuff när lethon flyger. 
+
+
+
+cenarius:
+
+	nightmare brambles: fixerar på spelare. stå inte i skit. dra bort från raiden om fixerad.
+
+	aura of dread thorns: adds reflekterar 50% dmg om de är nära cenarius.
+
+	creeping nightmares: stackande ticking damage. stå i grönt gräs för att ta bort.
+
+	forces of nightmare: summonar 3 adds. 
+
+	destructive nightmares: döda snabbt, får ej nå spelare.
+
+	cleansing detonate: får adds att hjälpa oss. 
+
+	dessicating stomp: splittad damage, se till att någon står i den.
+
+	replinishing roots: 3% mana per sekund för healers.
+
+	rotten breath: mot en random spelare, gör mycket damage.
+
+	nightmare buffet: vid låg hp så gör draken AoE på raiden. Döda snabbt.
+
+	ancient dream: istället för att dö får man 50% hp. och man får 50% mer healing.
+
+	nightmare javelin: sprider ticking damage, sprid ut.
+
+	scorned touch: sprid ut.
+
+	unbound touch: kan användas för att cleara brambles.
+
+
+
+xavius:
+
+	33% corruption: spawnar en add. ticking damage.
+
+	66% corruption: AoE (cirklar på marken)
+
+	100% corruption: 300% extra damage i 20 sekunder, sen mind control.
+
+	hälften av raiden somnar på pull i 3 min.
+
+	de sovande vill ta nightmare corruption.
+
+	lurking corruption: spawnar en add på en ranged player, sprid ut.
+
+	spring ifrån adden, även om jag inte är fixerad.
+
+	nightmare blades: som focused chaos.
+
+	corruption horror:
+
+		tormenting swipe: stå inte i.
+
+		corrupting nova: AoE damage på alla i range. stå långt bort.
+
+	fas 2: andra halvan av raiden somnar, ingen vaknar.
+
+	corruption meteor: meteor. stacka upp för den.
+
+	bonds of terror: chainar två players, hög damage. gå nära varandra.
+
+	call of nightmares: döda inconceivable horror så snabbt som möjligt. spara AP.
+
+	tainted discharge: när inconceivable horror dör kommer en pool. måste soakas av de sovande. annars spawnar en ny add.
+
+	nightmare tentacles:
+
+		nightmare bolt: castas på random spelare.
+
+		döda bossen asap i denna fas.
+
+
+
+potions
+flasks
+300+ food
+
+ In the opener, pre-cast Pyroblast -> Rune of Power -> Combustion -> Phoenix's Flames
+
+ Pre-cast Pyroblast -> Cinderstorm -> Rune of Power -> use Combustion just before the cinders hit the boss. This will instantly give you 5 stacks. Then proceed as you otherwise would in the sequence above this.
+
+first phase:
+
+	get better at sleeping taking shadow adds.
+
+	kite into sleeping person, not sleeping corpse.
+
+	bring add in under boss, cleave down.
+
+	push so we don't have a second add.
+
+second add:
+
+	sleepers soak small puddles.
+
+	loosely stacked.
+
+	meteors only stacked by people with sleeping debuff maybe.
+
+	if high corruption, don't soak.
+
+	swap to walking adds instantly.
+
+third phase:
+
+	use hero.
+
+	zerg everything down.
+
+	nightmare blades: behind the raid.
+
+
+
+
+
+	
+stick together on first set of adds, bring to green
+
+second set of adds around red.
+
+never ever stand in the white web.
+
+tornados on moon side
+
+linked:
+
+	stack on top of eachother, people can't run between linked players.
+
+first phase:
+
+	don't run before the descent has targeted. there will be web.
+
+	drop the winds right at the edge. around moon
+
+	green goo on green.
+
+second platform:
+
+	green go on skull side and along gateway
+
+	tornados on purple side. far away.
+
+	don't get too many stacks. stack in the first set of winds. <- violent winds/wind burn
+
+spider phase:
+
+	more green goo.
+
+
+hero on pull
+
+more focus on adds
+
+first adds in p2: tim pops cooldowns.
+second time: run to other side 
+
+/run 
+C_Timer.After(1,
+function() 
+SetRaidTarget("player", random(8))
+print(random(8)) end)

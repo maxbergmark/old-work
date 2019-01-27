@@ -1,0 +1,9 @@
+import sys
+import re
+from cx_Freeze import setup, Executable
+
+setup(
+    name = "On Dijkstra's Algorithm",
+    version = "3.1",
+    description = "A Dijkstra's Algorithm help tool.",
+    executables = [Executable("mouse2.py", base = "Win32GUI")])

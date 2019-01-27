@@ -1,0 +1,20 @@
+Sometimes crashes when camera is moved far away from the polygons. Antialiasing implemented. 
+Everything is resized to be 3 times as big, in order to clearly see the antialiasing.
+
+Movement and controls:
+
+Keypad: move relative to the camera
+
+I/K: move up/down
+J/L: strafe left/right
+U/O: look down/up
+WASD: move the light source in the xz-plane
+Q/E: move the light source down/up
+1/2/3/4/5: change the antialiasing level, 1 is no AA
+T: toggle the showing of the edge detection
+
+The project is based on detecting edges when rendering the image, and only applying antialiasing to the areas around the edges. Large surfaces on polygons tend to be continuous in color, without any sharp changes. Thus the algorithm applies the antialiasing where it is needed the most, to render the image faster with better quality.
+
+The edge detection is achieved by utilizing the idea of the raytracer. When a ray is cast, it must check for collisions with polygons. By also checking if the collision is close to the edge of a polygon, we can give the ray an attribute which describes if it's close to any polygon edge. IFF the ray is close to an edge, the antialiasing filter is applied.
+
+Depending on the geometry, performance can be increased by at least 50% for images with many small polygons and low antialiasing, and sometimes by several hundred percent for simple geometries and high antialiasing. 

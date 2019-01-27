@@ -1,0 +1,164 @@
+ 10
+
+ 7. Observe the traffic and answer the following questions:
+
+	(a) How many packets are transmitted in total (count both directions)?
+
+		20
+
+	(b) What is the range of the sequence numbers used by the sender (Host A)?
+
+		0-10002
+
+	(c) How many packets do not carry a data payload?
+
+		12 (3 from A, 9 from B)
+
+	(d) What is the total number of bytes transmitted in the recorded transfer? (Calculate
+	the amount of user data that was transmitted!)
+
+		10416
+
+	(e) Compare the total amount of data transmitted in the TCP data transfer to that of a
+	UDP data transfer. Which of the protocols is more efficient in terms of overhead?
+	What is the efficiency in percentage for these two protocols?
+	(Recall the UDP measurements from the previous lab. How many bytes were sent
+	in total using UDP?)
+
+		Total bytes sent with tcp: 11336
+
+		UDP efficiency: 99.2%
+		TCP efficiency: 94.0%
+
+11.1
+
+6. Study the list of captured packets. Observe the TCP connection establishment and answer
+the following questions:
+
+	(a) Which packets constitute the three-way handshake? Which flags are set in the
+	headers of these packets?
+
+
+
+	(b) What are the initial sequence numbers used by the client and the server, respectively?
+
+
+
+	(c) Which packet contains the first application data?
+
+
+
+	(d) What are the initial window sizes for the client and for the server?
+
+		Client: 5840
+		Server: 5792
+
+	(e) How long does it roughly take to open the TCP connection?
+
+		About 0.44ms
+
+
+
+7. Study the list of captured packets. Observe the TCP connection termination and answer
+the following questions.
+
+	(a) Which packets are involved in closing the connection?
+
+		The last 3 packets are involved.
+
+		[FIN, (ACK)]
+		[FIN,ACK]
+		[ACK]
+
+	(b) Which flags are set in these packets?
+
+		[FIN, (ACK)]
+		[FIN,ACK]
+		[ACK]
+
+
+
+5. Study the captured list of packets and observe the TCP segments that are transmitted.
+Answer the following questions.
+
+	(a) How does the server host (Host B) close the connection?
+	
+		By sending a [RST,ACK]
+
+	(b) How long does the process of ending the connection take?
+
+		0.044ms
+
+
+12.1
+
+4. Type a few characters in the telnet application. The telnet client (Host A) sends
+each character in a separate TCP segment to the server (Host B) which in turn echoes
+the character back to the client. Including echoes, we would therefore expect to see four
+TCP segments for each typed character.
+
+	(a) How many segments can be seen?
+	
+	12 for 4 characters
+
+	(b) Describe the payload of each packet.
+
+		First packet is the character.
+		Second is an echo and ACK for first packet.
+		Third is ACK for the echo.
+
+	(c) Explain why you do not see four packets per typed character.
+
+		The server has a delayed ACKs, so it sends the ACK together with the ECHO
+
+	(d) When the client receives the echo, it waits a certain time before sending the ACK.
+	Why? How long is the delay?
+
+		The ACK is sent immediately, but is delayed 150ms by the interface.
+		150.277ms delay in total.
+
+	(e) In the segments that carry characters, what window size is advertised by the telnet
+	client and by the server? Does the window size vary as the connection proceeds?
+
+		216 bytes window size for the client
+		362 bytes window size for the server
+
+
+5. Type quickly a lot of characters in the telnet application, such as by pressing a key
+continuously.
+
+	(a) Do you observe a difference in the transmission of segment payloads and ACKs?
+
+		The characters are bundled together, and the ACKs are bundled with the data packets.
+
+
+
+5. Observe the sliding window protocol from the output of Wireshark. The sender
+transmits data up to the window size of the receiver. Answer the following questions.
+
+	(a) How often does the receiver send ACKs? Can you see a rule on how TCP sends
+	ACKs?
+
+
+
+	(b) How many bytes of data does a receiver acknowledge in a typical ACK?
+
+
+
+	(c) How does the window size vary during the session?
+
+
+
+	(d) Select any ACK packet in the Wireshark trace and note its acknowledgement
+	number. Find the original segment in the Wireshark output. How long did it
+	take from the transmission until it was ACKed?
+
+
+
+	(e) Does the TCP sender generally transmit the maximum number of bytes as allowed
+	by the receiver?
+
+
+
+darnald@kth.se
+alnesjo@kth.se

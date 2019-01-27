@@ -1,0 +1,13 @@
+Sometimes crashes when camera is moved far away from the polygons. Antialiasing implemented. 
+
+Movement and controls:
+
+Keypad: move relative to the camera
+
+I/K: move up/down
+J/L: strafe left/right
+U/O: look down/up
+WASD: move the light source in the xz-plane
+Q/E: move the light source down/up
+1/2/3/4/5: change the antialiasing level, 1 is no AA
+T: toggle edge detection (for the project)

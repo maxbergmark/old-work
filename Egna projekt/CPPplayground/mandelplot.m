@@ -1,0 +1,10 @@
+clc;clear all;
+format longg;
+A = load('color.txt');
+l = load('limits.txt');
+x = linspace(l(1,1),l(1,2));
+y = linspace(l(1,3),l(1,4));
+imagesc(x,y,A);
+set(gca,'Ydir','normal');
+colormap(jet(100));
+imwrite(A,jet(50),'mandelwhole.jpg');

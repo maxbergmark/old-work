@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{CA6B39E8-F152-4B26-B0CA-551ACE80B73E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>SecondLab2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SecondLab2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SecondLab2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SecondLab2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SecondLab2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SecondLab2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SecondLab2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SecondLab2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SecondLab2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>c:\SDL-1.2.15\include;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SDL-1.2.15\lib\x86%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Debug/libSecondLab2.dll.a</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Debug/SecondLab2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -O3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>c:\SDL-1.2.15\include;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SDL-1.2.15\lib\x86%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Release/libSecondLab2.dll.a</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/Release/SecondLab2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>c:\SDL-1.2.15\include;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SDL-1.2.15\lib\x86%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/MinSizeRel/libSecondLab2.dll.a</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/MinSizeRel/SecondLab2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>c:\SDL-1.2.15\include;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\MinGW\include\SDL;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SDL-1.2.15\lib\x86%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/RelWithDebInfo/libSecondLab2.dll.a</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/RelWithDebInfo/SecondLab2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 -BC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 --check-stamp-file C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCCompiler.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-windres.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindSDL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 -BC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 --check-stamp-file C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCCompiler.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-windres.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindSDL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 -BC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 --check-stamp-file C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCCompiler.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-windres.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindSDL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 -BC:/Users/Max/Dropbox/Programmering/DD2323/CgLab4 --check-stamp-file C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCCompiler.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\3.2.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-windres.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-C-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-GNU-CXX-ABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindSDL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Max\Dropbox\Programmering\DD2323\CgLab4\skeleton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Max/Dropbox/Programmering/DD2323/CgLab4/ZERO_CHECK.vcxproj">
+      <Project>07101378-C6C6-4107-BED6-5D3186DD571F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
