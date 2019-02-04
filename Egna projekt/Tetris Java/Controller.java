@@ -36,7 +36,7 @@ public class Controller {
 
 	private void setupGame(int seed) {
 		tetrisGame = new Tetris(seed);
-		tetrisBot = new PlayTetris7(tetrisGame);
+		tetrisBot = new PlayTetris5(tetrisGame);
 
 		if (enableView) {
 			tetrisView = new View(tetrisGame, frameTime);
