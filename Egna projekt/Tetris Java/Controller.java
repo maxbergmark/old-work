@@ -8,7 +8,7 @@ import java.io.*;
 
 public class Controller {
 	private Tetris tetrisGame;
-	private PlayTetris7 tetrisBot;
+	private PlayTetris5 tetrisBot;
 	private MakeSound tetrisSound;
 	private View tetrisView;
 	private Thread viewThread;

@@ -10,7 +10,7 @@ import java.util.Collections;
 public class Tetris {
 
 	private int xsize = 10;
-	private int ysize = 10;
+	private int ysize = 16;
 	private int mid = xsize/2-1;
 
 	private byte[][] playGrid = new byte[ysize][xsize];
